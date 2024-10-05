@@ -1,0 +1,71 @@
+@use 'color';
+@use 'font';
+
+.reviews__container{
+    max-width: 1500px;
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: color.$white;
+
+    .review__left{
+        max-width: 300px;
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa-solid{
+        color: color.$golden;
+    }
+}
+
+.review-cards-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 700px;
+
+    .card{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 300px;
+        min-height: 200px;
+        width: 100%;
+        box-shadow: 2px 4px 10px black;
+        border-radius:10px;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        img{
+            width: 80px;
+            height: auto;
+        }
+
+        &-name{
+            font-family: font.$font-family;
+            letter-spacing: 1px;
+        }
+
+        &-text{
+            font-family: font.$font-family;
+            letter-spacing: 1px;
+            line-height: 20px;
+            text-align: justify;
+        }
+
+    }
+}

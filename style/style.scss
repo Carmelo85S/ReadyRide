@@ -1,8 +1,9 @@
-@import '_navbar.scss';
-@import '_hero-index.scss';
-@import '_vehicles-cards';
-@import '_steps-card';
-@import '_brands';
+@import './index-scss/_navbar.scss';
+@import './index-scss/_hero-index.scss';
+@import './index-scss/_vehicles-cards';
+@import './index-scss/steps-card';
+@import './index-scss/brands';
+@import './index-scss/review';
 
 body {
     padding-top:50px;
