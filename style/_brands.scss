@@ -1,0 +1,31 @@
+@use '_color';
+
+.brands__container{
+    max-width: 100vw;
+    width: 100%;
+    min-height: 100px;
+    margin: auto;
+    background-color: color.$cream;
+
+    &-logos{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        flex-wrap: wrap;
+
+        svg{
+            width: 100px;
+            height: auto;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: color.$white;
+            box-shadow: 1px 10px 20px rgb(110, 110, 110);
+        }
+
+        svg:not(:last-child){
+            margin: 10px;
+        }
+    }
+}

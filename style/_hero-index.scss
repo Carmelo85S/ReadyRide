@@ -1,0 +1,36 @@
+@use '_font';
+
+.hero__container {
+    max-width: 1500px;
+    min-height: 600px;
+    width: 100%;
+    background: url(../image/alfa-romeo.jpg) no-repeat center center/cover;
+
+    &-text {
+        max-width: 850px;
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+
+        &-title {
+            font-family: font.$font-family;
+            font-weight: 200;
+            font-size: 90px;
+            letter-spacing: 10px;
+            color: #FFFFFF;
+            line-height: 100px;
+            margin-bottom: 10px;
+        }
+
+        &-info {
+            font-family: font.$font-family;
+            font-weight: 200;
+            font-size: 18px;
+            color: #FFFFFF;
+            line-height: 30px;
+            letter-spacing: 2px;
+        }
+    }
+}
