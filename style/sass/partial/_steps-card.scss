@@ -1,5 +1,5 @@
-@use '_font';
-@use '_color';
+@use '../variable/color';
+@use '../variable/font';
 
 .steps__container{
     max-width: 1500px;

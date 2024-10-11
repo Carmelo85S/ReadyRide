@@ -1,4 +1,5 @@
-@use '_color';
+@use '../variable/color';
+@use '../variable/font';
 
 .vehicle__container {
     display: flex;

@@ -1,6 +1,6 @@
-@use '_theme';
-@use '_font';
-@use '_color';
+@use '../variable/color';
+@use '../variable/font';
+@use '../variable/theme';
 
 
 header{

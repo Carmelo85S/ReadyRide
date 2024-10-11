@@ -1,0 +1,20 @@
+@import '../sass/partial/navbar';
+@import '../sass/partial/_hero-index.scss';
+@import '../sass/partial/_vehicles-cards';
+@import '../sass/partial/steps-card';
+@import '../sass/partial/brands';
+@import '../sass/partial/review';
+@import '../sass/partial/premium-car-rental';
+
+
+*{
+    padding: o;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top:50px;
+}

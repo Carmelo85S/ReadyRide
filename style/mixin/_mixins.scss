@@ -1,0 +1,13 @@
+@mixin cta($bg-color, $text-color) {
+        background-color: $bg-color;
+        color: $text-color;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      
+        &:hover {
+          opacity: 0.8;
+        }
+}

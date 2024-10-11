@@ -1,9 +1,9 @@
-@use 'color';
-@use 'font';
+@use '../variable/color';
+@use '../variable/font';
 
 .reviews__container{
     max-width: 1500px;
-    min-height: 400px;
+    min-height: 200px;
     width: 100%;
     display: flex;
     justify-content:center;
@@ -12,13 +12,17 @@
     background-color: color.$white;
 
     .review__left{
-        max-width: 300px;
+        max-width: 200px;
         width: 100%;
         min-height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+
+        &-head{
+            font-family: font.$font-family;
+        }
     }
 
     .fa-solid{
@@ -28,25 +32,24 @@
 
 .review-cards-container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items:center;
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1000px;
     width: 100%;
-    min-height: 700px;
+    min-height: 600px;
 
     .card{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        flex-wrap: wrap;
         max-width: 300px;
         min-height: 200px;
         width: 100%;
         box-shadow: 2px 4px 10px black;
-        border-radius:10px;
+        overflow: scroll;
         padding: 10px;
         margin-bottom: 20px;
 
@@ -60,12 +63,23 @@
             letter-spacing: 1px;
         }
 
-        &-text{
+        .location{
             font-family: font.$font-family;
             letter-spacing: 1px;
-            line-height: 20px;
-            text-align: justify;
+            font-weight: 500;
         }
 
+        &__text-container{
+            max-width: 300px;
+            min-height: 200px;
+            width: 100%;
+
+            .card__text-info{
+                font-family: font.$font-family;
+                letter-spacing: 1px;
+                line-height: 25px;
+                text-align: justify;
+            }
+        }
     }
 }

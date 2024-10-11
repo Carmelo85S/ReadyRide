@@ -1,10 +1,11 @@
-@use '_font';
+@use '../variable/color';
+@use '../variable/font';
 
 .hero__container {
     max-width: 1500px;
     min-height: 600px;
     width: 100%;
-    background: url(../image/alfa-romeo.jpg) no-repeat center center/cover;
+    background: url(../../image/alfa-romeo.jpg) no-repeat center center/cover;
 
     &-text {
         max-width: 850px;
@@ -19,7 +20,7 @@
             font-weight: 200;
             font-size: 90px;
             letter-spacing: 10px;
-            color: #FFFFFF;
+            color: color.$white;
             line-height: 100px;
             margin-bottom: 10px;
         }

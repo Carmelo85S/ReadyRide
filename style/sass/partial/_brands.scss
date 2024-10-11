@@ -1,4 +1,5 @@
-@use '_color';
+@use '../variable/color';
+@use '../variable/font';
 
 .brands__container{
     max-width: 100vw;

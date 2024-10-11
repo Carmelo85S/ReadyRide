@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/base/normalize.css">
+    <link rel="stylesheet" href="./style/base/style.css">
     <title>Ride Ready - Rent a car</title>
 </head>
 <body>
@@ -38,8 +38,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                 At RideReady, we believe in making every journey an unforgettable experience. 
                 Whether you're cruising through the city or embarking on a weekend adventure, 
                 our wide range of vehicles ensures you'll find the perfect ride.
-                With easy online booking and flexible rental options, you're just a few clicks
-        away    from hitting the road in style.
+                With easy online booking and flexible rental options, you're just a few clicks 
+                away from hitting the road in style.
             </p>
         </section>
     </section>
@@ -113,7 +113,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     <!--REVIEWS-->
     <section class="reviews__container">
         <section class="review__left">
-            <h2>Excellent</h2>
+            <h2 class="review__left-head">Excellent</h2>
             <div>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -128,43 +128,71 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
                     <img src="./image/reviews-face/woman.png" alt="woman face review icon">
                     <div>
                         <h3 class="card-name">Carla</h3>
-                        <p>Stockholm</p>
+                        <p class="location">Stockholm</p>
                     </div>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Molestiae ducimus, in optio autem, cum debitis 
-                         architecto asperiores magni iure fugit sed eligendi, 
-                         illum facere ut! Ipsum eaque eos amet dolores.
-                    </p>
+                    <div class="card__text-container">
+                         <p class="card__text-info">
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              Molestiae ducimus, in optio autem, cum debitis 
+                              architecto asperiores magni iure fugit sed eligendi, 
+                              illum facere ut! Ipsum eaque eos amet dolores.
+                        </p>
+                    </div>
             </section>
+
             <section class="card">
-                    <img src="./image/reviews-face/woman.png" alt="woman face review icon">
-                    <div>
-                        <h3 class="card-name">Carla</h3>
-                        <p>Stockholm</p>
-                    </div>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Molestiae ducimus, in optio autem, cum debitis 
-                         architecto asperiores magni iure fugit sed eligendi, 
-                         illum facere ut! Ipsum eaque eos amet dolores.
+                <img src="./image/reviews-face/woman.png" alt="woman face review icon">
+                <div>
+                    <h3 class="card-name">Carla</h3>
+                    <p class="location">Rome</p>
+                </div>
+                <div class="card__text-container">
+                     <p class="card__text-info">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Molestiae ducimus, in optio autem, cum debitis 
+                          architecto asperiores magni iure fugit sed eligendi, 
+                          illum facere ut! Ipsum eaque eos amet dolores.
                     </p>
-            </section>
-            <section class="card">
-                    <img src="./image/reviews-face/woman.png" alt="woman face review icon">
-                    <div>
-                        <h3 class="card-name">Carla</h3>
-                        <p>Stockholm</p>
-                    </div>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Molestiae ducimus, in optio autem, cum debitis 
-                         architecto asperiores magni iure fugit sed eligendi, 
-                         illum facere ut! Ipsum eaque eos amet dolores.
-                    </p>
+                </div>
+        </section>
+
+        <section class="card">
+            <img src="./image/reviews-face/woman.png" alt="woman face review icon">
+            <div>
+                <h3 class="card-name">Carla</h3>
+                <p class="location">Stockholm</p>
+            </div>
+            <div class="card__text-container">
+                 <p class="card__text-info">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae ducimus, in optio autem, cum debitis 
+                      architecto asperiores magni iure fugit sed eligendi, 
+                      illum facere ut! Ipsum eaque eos amet dolores.
+                </p>
+            </div>
+    </section>
+        </section>
+    </section>
+
+    <!--PREMIUM CAR RENTAL-->
+    <section class="premium__container">
+        <section class="premium__heading">
+            <h2 class="heading">
+                PREMIUM SERVICES
+            </h2>
+        </section>
+        <section class="card">
+            <img src="image/premium-services/concierge.jpg" alt="#">
+            <section class="card-info-container">
+                <p class="card-info">
+                    Our dedicated concierge will take care of every detail, 
+                    allowing you to focus on enjoying the road.
+                </p>
+                <a class="cta" href="#">Learn More</a>
             </section>
         </section>
     </section>
+
 
 </body>
 </html>
