@@ -1,61 +1,56 @@
 @use '../variable/color';
 @use '../variable/font';
+@import '../../mixin/mixins';
 
 .vehicle__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-container(row, center, center);
     max-width: 1500px;
     width: 100%;
     min-height: 100px;
     margin: 0 auto;
     background-color: color.$brown;
-}
-
-.vehicle__cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    top:-50px;
-    flex-wrap: wrap;
-
+  }
+  
+  .vehicle__cards {
+    @include flex-wrap(row, center, center);
+    position: relative;
+    top: -50px;
+  
     img {
-        max-width: 200px;
-        min-height: auto;
-        width: 100%;
-        border-radius: 5px;
-        margin: 10px 20px;
-        box-shadow: 2px 2px 20px black;
-        transition: 0.2s ease-in-out;
-
-        &:hover {
-            transform: scale(1.05);
-        }
+      max-width: 200px;
+      width: 100%;
+      border-radius: 5px;
+      margin: 10px 20px;
+      box-shadow: 2px 2px 20px black;
+      transition: 0.2s ease-in-out;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
     }
-
+  
     .ferrari-animation {
-        animation: fadeIn 0.5s ease-in;
+      animation: fadeIn 0.5s ease-in;
     }
-
+  
     .suv-animation {
-        animation: fadeIn 1s ease-in;
+      animation: fadeIn 1s ease-in;
     }
-
+  
     .tesla-animation {
-        animation: fadeIn 1.5s ease-in;
+      animation: fadeIn 1.5s ease-in;
     }
-
+  
     .offroad-animation {
-        animation: fadeIn 2s ease-in;
+      animation: fadeIn 2s ease-in;
     }
-
+  
     @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
-}
+  }

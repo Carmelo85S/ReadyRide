@@ -1,73 +1,68 @@
 @use '../variable/color';
 @use '../variable/font';
 @use '../variable/theme';
+@import '../../mixin/mixins';
 
+header {
+  border-bottom: 1px solid rgba(196, 192, 192, 0.3);
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 70px;
+  z-index: 10;
 
-header{
-    border-bottom:1px solid rgba(196, 192, 192, 0.3);
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    top:0;
+  .navigation {
+    max-width: 1400px;
     width: 100%;
     min-height: 70px;
-    background-color: black;
-    z-index:10;
-
-    .navigation{
-        max-width: 1400px;
-        width: 100%;
-        min-height: 70px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: auto;
+    margin: auto;
+    @include flex-space-around(row);
     
-        h3{
-            font-family: font.$font-family;
-            font-weight: 200;
-            font-size: 25px;
-            color:white;
-            letter-spacing: 2px;
+    h3 {
+      font-family: font.$font-family;
+      font-weight: 200;
+      font-size: 25px;
+      color: white;
+      letter-spacing: 2px;
 
-            span{
-                color: color.$golden;
-                font-style: italic;
-            }
-        }
-
-        .link_list{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap:30px;
-
-            .link{
-                font-family: font.$font-family;
-                font-size: 16px;
-                font-weight: 200;
-                text-decoration: none;
-                color: #FFFFFF;
-                letter-spacing: 2px;
-                transition: color 0.3s ease-in-out;
-
-                &:hover{
-                    color: color.$golden;
-                }
-            }
-        }
-
-        .email{
-            font-family: font.$font-family;
-            font-size: 16px;
-            font-weight: 200;
-            text-decoration: none;
-            color: #FFFFFF;
-            letter-spacing: 2px;
-            transition: color 0.3s ease-in-out;
-            
-            &:hover{
-                color: color.$golden;
-            }
-        }
+      span {
+        color: color.$golden;
+        font-style: italic;
+      }
     }
+
+    .link_list {
+      @include flex-center; // Sostituisce display: flex, justify-content, align-items
+      gap: 30px;
+
+      .link {
+        font-family: font.$font-family;
+        font-size: 16px;
+        font-weight: 200;
+        text-decoration: none;
+        color: #FFFFFF;
+        letter-spacing: 2px;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: color.$golden;
+        }
+      }
+    }
+
+    .email {
+      font-family: font.$font-family;
+      font-size: 16px;
+      font-weight: 200;
+      text-decoration: none;
+      color: #FFFFFF;
+      letter-spacing: 2px;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: color.$golden;
+      }
+    }
+  }
 }

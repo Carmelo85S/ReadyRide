@@ -11,3 +11,70 @@
           opacity: 0.8;
         }
 }
+
+@mixin flex-container($direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch, $align-content: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+  align-content: $align-content;
+}
+
+@mixin flex-item($grow: 0, $shrink: 1, $basis: auto, $order: 0) {
+  flex: $grow $shrink $basis;
+  order: $order;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@mixin flex-wrap($direction: row, $justify: flex-start, $align: stretch) {
+  @include flex-container($direction, wrap, $justify, $align);
+}
+
+@mixin flex-space-between($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-space-around($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-space-evenly($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-evenly;
+  align-items: center;
+}

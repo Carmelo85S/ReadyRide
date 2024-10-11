@@ -1,43 +1,40 @@
 @use '../variable/color';
 @use '../variable/font';
+@import '../../mixin/mixins';
 
-.steps__container{
+.steps__container {
     max-width: 1500px;
     width: 100%;
     min-height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: color.$brown;
-
-    &-content{
-        max-width: 200px;
-        min-height: 200px;
-        width: 100%;
-        padding:0 20px;
-
-        .steps__num{
-            font-family: font.$font-family;
-            color: font.$txt-color;
-            font-size:14px;
-        }
-
-        .steps__container-title{
-            font-family: font.$font-family;
-            color: font.$txt-color;
-            line-height: 20px;
-            letter-spacing: 1px;
-            font-size:18px;
-        }
-
-        .steps__container-info{
-            font-family: font.$font-family;
-            color: font.$txt-color;
-            line-height: 20px;
-            letter-spacing: 1px;
-            font-size:14px;
-        }
+    @include flex-wrap(row, space-around, flex-start); 
+    
+    &-content {
+      max-width: 200px;
+      min-height: 200px;
+      width: 100%;
+      padding: 0 20px;
+  
+      .steps__num {
+        font-family: font.$font-family;
+        color: font.$txt-color;
+        font-size: 14px;
+      }
+  
+      .steps__container-title {
+        font-family: font.$font-family;
+        color: font.$txt-color;
+        line-height: 20px;
+        letter-spacing: 1px;
+        font-size: 18px;
+      }
+  
+      .steps__container-info {
+        font-family: font.$font-family;
+        color: font.$txt-color;
+        line-height: 20px;
+        letter-spacing: 1px;
+        font-size: 14px;
+      }
     }
 }

@@ -1,85 +1,73 @@
 @use '../variable/color';
 @use '../variable/font';
+@import '../../mixin/mixins';
 
-.reviews__container{
-    max-width: 1500px;
-    min-height: 200px;
+.reviews__container {
+  max-width: 1500px;
+  min-height: 200px;
+  width: 100%;
+  background-color: color.$white;
+  @include flex-wrap(row, center, center);
+
+  .review__left {
+    max-width: 200px;
     width: 100%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: color.$white;
+    min-height: 200px;
+    @include flex-container(column, nowrap, center, flex-start);
 
-    .review__left{
-        max-width: 200px;
-        width: 100%;
-        min-height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-
-        &-head{
-            font-family: font.$font-family;
-        }
+    &-head {
+      font-family: font.$font-family;
     }
+  }
 
-    .fa-solid{
-        color: color.$golden;
-    }
+  .fa-solid {
+    color: color.$golden;
+  }
 }
 
-.review-cards-container{
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1000px;
+.review-cards-container {
+  max-width: 1000px;
+  width: 100%;
+  min-height: 600px;
+  @include flex-wrap(row, space-around, center);
+
+  .card {
+    max-width: 300px;
+    min-height: 200px;
     width: 100%;
-    min-height: 600px;
+    box-shadow: 2px 4px 10px black;
+    overflow: scroll;
+    padding: 10px;
+    margin-bottom: 20px;
+    @include flex-container(column, nowrap, flex-start, flex-start);
 
-    .card{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        max-width: 300px;
-        min-height: 200px;
-        width: 100%;
-        box-shadow: 2px 4px 10px black;
-        overflow: scroll;
-        padding: 10px;
-        margin-bottom: 20px;
-
-        img{
-            width: 80px;
-            height: auto;
-        }
-
-        &-name{
-            font-family: font.$font-family;
-            letter-spacing: 1px;
-        }
-
-        .location{
-            font-family: font.$font-family;
-            letter-spacing: 1px;
-            font-weight: 500;
-        }
-
-        &__text-container{
-            max-width: 300px;
-            min-height: 200px;
-            width: 100%;
-
-            .card__text-info{
-                font-family: font.$font-family;
-                letter-spacing: 1px;
-                line-height: 25px;
-                text-align: justify;
-            }
-        }
+    img {
+      width: 80px;
+      height: auto;
     }
+
+    &-name {
+      font-family: font.$font-family;
+      letter-spacing: 1px;
+    }
+
+    .location {
+      font-family: font.$font-family;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+
+    &__text-container {
+      max-width: 300px;
+      min-height: 200px;
+      width: 100%;
+
+      .card__text-info {
+        font-family: font.$font-family;
+        letter-spacing: 1px;
+        line-height: 25px;
+        text-align: justify;
+      }
+    }
+  }
 }
