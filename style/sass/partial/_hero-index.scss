@@ -7,31 +7,46 @@
     min-height: 600px;
     width: 100%;
     background: url(../../image/alfa-romeo.jpg) no-repeat center center/cover;
-  
+
     &-text {
-      max-width: 850px;
-      width: 100%;
-      min-height: 200px;
-      margin-left: 30px;
-      @include flex-container(column);
-  
-      &-title {
-        font-family: font.$font-family;
-        font-weight: 200;
-        font-size: 90px;
-        letter-spacing: 10px;
-        color: color.$white;
-        line-height: 100px;
-        margin-bottom: 10px;
-      }
-  
-      &-info {
-        font-family: font.$font-family;
-        font-weight: 200;
-        font-size: 18px;
-        color: #FFFFFF;
-        line-height: 30px;
-        letter-spacing: 2px;
-      }
+        max-width: 1500px;
+        width: 100%;
+        min-height: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .wrapper {
+            max-width: 1300px;
+            width: 100%;
+            min-height: 300px;
+            margin: auto;
+
+            &-title {
+              max-width: 700px;
+              width: 100%;
+              min-height: 30px;
+              font-family: font.$font-family;
+              font-weight: 200;
+              font-size: 90px;
+              letter-spacing: 10px;
+              color: color.$white;
+              line-height: 100px; 
+              margin-bottom: 10px;  
+            }
+
+            &-info {
+              max-width: 700px;
+              width: 100%;
+              min-width: 100px;
+              font-family: font.$font-family;
+              font-weight: 200;
+              font-size: 18px;
+              color: #FFFFFF; 
+              line-height: 30px;
+              letter-spacing: 2px;
+            }
+        }
     }
-  }
+}

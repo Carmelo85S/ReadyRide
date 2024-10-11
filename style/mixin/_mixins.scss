@@ -40,6 +40,7 @@
 @mixin flex-vertical-center {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 @mixin flex-start {
@@ -58,11 +59,11 @@
   @include flex-container($direction, wrap, $justify, $align);
 }
 
-@mixin flex-space-between($direction: row) {
+@mixin flex-space-between($direction: row, $align: center) {
   display: flex;
   flex-direction: $direction;
   justify-content: space-between;
-  align-items: center;
+  align-items: $align;
 }
 
 @mixin flex-space-around($direction: row) {
