@@ -12,7 +12,7 @@
     .steps__container{
       max-width: 1300px;
       width: 100%;
-      min-height: 300px;
+      min-height: 200px;
       margin: 0 auto;
       @include flex-container(row, wrap, space-between, center, stretch);
       

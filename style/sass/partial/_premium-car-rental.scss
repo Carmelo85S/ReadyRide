@@ -2,6 +2,23 @@
 @use '../variable/font';
 @import '../../mixin/mixins';
 
+$card-backgrounds: (
+  luxury-car: '../../../image/premium-services/luxury-car.jpg',
+  private-lounge: '../../../image/premium-services/private-lounge.jpg',
+  chaffeaur: '../../../image/premium-services/chaffeaur-service.jpg',
+  long-term: '../../../image/premium-services/long-term.jpg',
+  short-term: '../../../image/premium-services/short-term.jpg',
+  wedding: '../../../image/premium-services/wedding.jpg',
+  driving-tours: '../../../image/premium-services/driving-tour.jpg',
+  drive-experience: '../../../image/premium-services/drive-experience.jpg'
+);
+
+@mixin card-background($card-name) {
+  $background-image: map-get($card-backgrounds, $card-name);
+  background: url($background-image);
+  background-size: cover;
+}
+
 .wrapper-premium {
   max-width: 100vw;
   min-height: 1200px;
@@ -16,18 +33,18 @@
     margin: auto;
     
     .premium__heading {
-      max-width: 850px;
+      max-width: 950px;
       width: 100%;
       min-height: 100px;
       margin-bottom: 20px;
 
-        .heading {
-          font-family: font.$font-family;
-          font-weight: 300; 
-          font-size: 70px; 
-          letter-spacing: 10px;
-          color: color.$white;
-        }
+      .heading {
+        font-family: font.$font-family;
+        font-weight: 300; 
+        font-size: 70px; 
+        letter-spacing: 10px;
+        color: color.$white;
+      }
     }
         
     .cards_container {
@@ -118,44 +135,37 @@
             transform: scale(1.02);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
           }
-        &.luxury-car{
-          background: url(../../../image/premium-services/luxury-car.jpg);
-          background-size: cover;
+
+        &.luxury-car {
+          @include card-background(luxury-car);
         }
 
-        &.private-lounge{
-          background: url(../../../image/premium-services/private-lounge.jpg);
-          background-size: cover;
+        &.private-lounge {
+          @include card-background(private-lounge);
         }
 
-        &.chaffeaur{
-          background: url(../../../image/premium-services/chaffeaur-service.jpg);
-          background-size: cover;
+        &.chaffeaur {
+          @include card-background(chaffeaur);
         }
 
-        &.long-term{
-          background: url(../../../image/premium-services/long-term.jpg);
-          background-size: cover;
+        &.long-term {
+          @include card-background(long-term);
         }
 
-        &.short-term{
-          background: url(../../../image/premium-services/short-term.jpg);
-          background-size: cover;
+        &.short-term {
+          @include card-background(short-term);
         }
 
-        &.wedding{
-          background: url(../../../image/premium-services/wedding.jpg);
-          background-size: cover;
+        &.wedding {
+          @include card-background(wedding);
         }
 
-        &.driving-tours{
-          background: url(../../../image/premium-services/driving-tour.jpg);
-          background-size: cover;
+        &.driving-tours {
+          @include card-background(driving-tours);
         }
 
-        &.drive-experience{
-          background: url(../../../image/premium-services/drive-experience.jpg);
-          background-size: cover;
+        &.drive-experience {
+          @include card-background(drive-experience);
         }
       }
     }
