@@ -3,7 +3,7 @@
 @import '../../mixin/mixins';
 
 $card-backgrounds: (
-  luxury-car: '../../../image/premium-services/luxury-car.jpg',
+  luxury-car: '../../main/image/premium-services/luxury-car.jpg',
   private-lounge: '../../../image/premium-services/private-lounge.jpg',
   chaffeaur: '../../../image/premium-services/chaffeaur-service.jpg',
   long-term: '../../../image/premium-services/long-term.jpg',
@@ -70,7 +70,7 @@ $card-backgrounds: (
         transition: transform 0.3s, box-shadow 0.3s;
         position: relative;
 
-          /*&::before {
+          &::before {
             content: '';
             position: absolute;
             top: 0;
@@ -79,7 +79,7 @@ $card-backgrounds: (
             height: 100%;
             background: rgba(0, 0, 0, 0.7); 
             z-index: 1;
-          }*/
+          }
 
           .card-info-container {
             padding: 20px;
