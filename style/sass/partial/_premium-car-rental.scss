@@ -21,7 +21,7 @@ $card-backgrounds: (
 
 .wrapper-premium {
   max-width: 100vw;
-  min-height: 1200px;
+  min-height: 1000px;
   width: 100%;
   background-color: color.$light-black;
   @include flex-center;
@@ -113,21 +113,7 @@ $card-backgrounds: (
               }
 
               .cta {
-                padding: 10px 20px;
-                color: color.$white;
-                border: 1px solid color.$golden;
-                font-family: font.$font-family;
-                font-size: 16px;
-                letter-spacing: 1px;
-                border-radius: 25px;
-                box-shadow: 2px 1px 10px color.$golden;
-                margin-top: 10px;
-                transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-                          
-                  &:hover {
-                      background-color: color.$hover-cta;
-                      color: color.$light-black;
-                  }
+                @include cta;
               }
           }
 

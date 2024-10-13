@@ -1,15 +1,19 @@
-@mixin cta($bg-color, $text-color) {
-        background-color: $bg-color;
-        color: $text-color;
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-      
-        &:hover {
-          opacity: 0.8;
-        }
+@mixin cta{
+  padding: 10px 20px;
+  color: color.$white;
+  border: 1px solid color.$golden;
+  font-family: font.$font-family;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 5px color.$golden;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+            
+    &:hover {
+        background-color: color.$hover-cta;
+        color: color.$light-black;
+    }
 }
 
 @mixin flex-container($direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch, $align-content: stretch) {
@@ -29,6 +33,13 @@
 @mixin flex-center {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
