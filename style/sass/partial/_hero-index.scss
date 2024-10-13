@@ -33,7 +33,19 @@
               letter-spacing: 10px;
               color: color.$white;
               line-height: 100px; 
-              margin-bottom: 10px;  
+              margin-bottom: 10px;
+              animation: slide-in-title 1.3s ease-in-out;
+
+              @keyframes slide-in-title {
+                0% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                100% {
+                  transform: translateX(0);
+                  opacity: 1;
+                }
+              }
             }
 
             &-info {
@@ -46,6 +58,18 @@
               color: #FFFFFF; 
               line-height: 30px;
               letter-spacing: 2px;
+              animation: slide-in-info 1s ease-in-out;
+
+              @keyframes slide-in-info {
+                0% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                100% {
+                  transform: translateX(0);
+                  opacity: 1;
+                }
+              }
             }
         }
     }

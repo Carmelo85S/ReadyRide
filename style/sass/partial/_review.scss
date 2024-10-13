@@ -13,7 +13,7 @@
     max-width: 200px;
     width: 100%;
     min-height: 200px;
-    @include flex-container(column, nowrap, center, flex-start);
+    @include flex-container(column, nowrap, space-around, flex-start);
 
     &-head {
       font-family: font.$font-family;
@@ -36,37 +36,48 @@
     min-height: 200px;
     width: 100%;
     box-shadow: 2px 4px 10px black;
-    overflow: scroll;
-    padding: 10px;
+    overflow: hidden; 
+    padding: 16px; 
     margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: color.$white;
     @include flex-container(column, nowrap, flex-start, flex-start);
 
     img {
       width: 80px;
       height: auto;
+      margin-bottom: 10px; 
+      border-radius: 50%;
     }
 
     &-name {
       font-family: font.$font-family;
       letter-spacing: 1px;
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
     }
 
     .location {
       font-family: font.$font-family;
       letter-spacing: 1px;
       font-weight: 500;
+      margin: 5px 0 10px;
+      color: color.$grey;
     }
 
     &__text-container {
       max-width: 300px;
-      min-height: 200px;
       width: 100%;
+      margin-top: 8px;
 
       .card__text-info {
         font-family: font.$font-family;
         letter-spacing: 1px;
         line-height: 25px;
         text-align: justify;
+        font-size: 14px;
+        color: color.$dark-gray;
       }
     }
   }
