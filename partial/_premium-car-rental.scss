@@ -5,7 +5,7 @@
 $card-backgrounds: (
   luxury-car: '../image/premium-img/luxury-car.jpg',
   private-lounge: '../image/premium-img/private-lounge.jpg',
-  chaffeaur: '../image/premium-img/chaffeaur-service.jpg',
+  chauffeur: '../image/premium-img/chauffeur.jpg',
   long-term: '../image/premium-img/long-term.jpg',
   short-term: '../image/premium-img/short-term.jpg',
   wedding: '../image/premium-img/wedding.jpg',
@@ -130,9 +130,10 @@ $card-backgrounds: (
           @include card-background(private-lounge);
         }
 
-        &.chaffeaur {
-          @include card-background(chaffeaur);
+        &.chauffeur {
+          @include card-background(chauffeur);
         }
+        
 
         &.long-term {
           @include card-background(long-term);

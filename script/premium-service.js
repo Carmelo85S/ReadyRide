@@ -8,8 +8,8 @@ const cardData = [
     {
       name: 'Chauffeur service',
       info: 'Our chauffeurs ensure your safety and comfort with an elegant touch to your journey.',
-      class: 'chaffeaur',
-      link: 'chauffeur-service.html',
+      class: 'chauffeur',
+      link: 'chauffeur.html',
     },
     {
       name: 'Private lounge',
@@ -63,10 +63,14 @@ function createCard(name, info, className, link) {
 
 function renderCards() {
   const cardsContainer = document.querySelector('.cards_container');
+  let cardsMarkup = '';
 
   cardData.forEach(card => {
-    cardsContainer.innerHTML += createCard(card.name, card.info, card.class, card.link);
+    cardsMarkup += createCard(card.name, card.info, card.class, card.link);
   });
+
+  cardsContainer.innerHTML = cardsMarkup;
 }
+
 
 renderCards();
