@@ -1,0 +1,21 @@
+@import '../partial/navbar';
+@import '../partial/_hero-index.scss';
+@import '../partial/_vehicles-cards';
+@import '../partial/steps-card';
+@import '../partial/brands';
+@import '../partial/review';
+@import '../partial/premium-car-rental';
+@import '../partial/why-ready-ride';
+
+
+*{
+    padding: o;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top:50px;
+}
