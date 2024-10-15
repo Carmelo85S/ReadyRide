@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM6z6Aq3YB/J4lRqaPLlQrRzK2eL2g2tXk0L6" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/base/normalize.css">
     <link rel="stylesheet" href="./style/base/style.css">
     <title>Ride Ready - Rent a car</title>
@@ -23,9 +23,15 @@
                 <li class="link_item"><a class="link" href="#">SERVICES</a></li>
                 <li class="link_item"><a class="link" href="#">CONTACT</a></li>
             </ul>
-            <a class="email" href="mailto:example@example.com">info@rideready.com</a>
+            <a class="email" href="mailto:example@example.com">
+                <i class="fas fa-envelope"></i> info@rideready.com
+            </a>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
+    
     
     <!--HERO-->
     <section class="hero__container">
@@ -153,7 +159,7 @@
             </section>
             <section class="why-container-content">
                 <section class="why-container-image">
-                    <img src="./image/mercedes-front.jpg" alt="Front view of a Mercedes">
+                    <img src="./image/intern.jpg" alt="intern of a luxury car">
                 </section>
                 <section class="menu">
                     <!-- Dynamic Content will be injected here -->
@@ -165,7 +171,7 @@
     
     
 
-
+    <script src="./script/toggle-nav.js"></script>
     <script src="./script/review.js"></script>
     <script src="./script/premium-service.js"></script>
     <script src="./script/show-hide.js"></script>

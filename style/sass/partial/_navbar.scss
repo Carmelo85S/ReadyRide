@@ -33,18 +33,9 @@ header {
     }
 
     .link_list {
-      @include flex-center;
+      @include flex-center; 
       gap: 30px;
       transition: max-height 0.3s ease-in-out;
-      overflow: hidden;
-
-      .link_item .icon {
-        display: none;
-
-        .fa-bars {
-          color: color.$golden;
-        }
-      }
 
       .link {
         font-family: font.$font-family;
@@ -75,4 +66,57 @@ header {
       }
     }
   }
+
+  .menu-toggle{
+    background: inherit;
+    font-size:30px;
+    color: color.$golden;
+    border:none;
+    display: none;
+  }
 }
+
+// Media Query for Mobile
+@media screen and (max-width: 950px) {
+  .navigation {
+    @include flex-between;
+    h3{
+      margin-left: 20px;
+    }
+    .link_list {
+      display: none;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      max-height: 0;
+      position:absolute;
+      top:70px;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      gap:0;
+      margin: 0;
+
+      &.active {
+        display: flex; 
+        max-height: 500px; 
+      }
+
+      .link_item{
+        padding: 20px;
+      }
+    }
+    .email{
+      display: none;
+    }
+
+    .menu-toggle {
+      display: block;
+      margin-right: 20px;
+    }
+  }
+}
+
+
+
+
