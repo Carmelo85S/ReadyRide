@@ -3,14 +3,14 @@
 @import '../mixin/mixins';
 
 $card-backgrounds: (
-  luxury-car: '../../../image/premium-img/luxury-car.jpg',
-  private-lounge: '../../../image/premium-img/private-lounge.jpg',
-  chaffeaur: '../../../image/premium-img/chaffeaur-service.jpg',
-  long-term: '../../../image/premium-img/long-term.jpg',
-  short-term: '../../../image/premium-img/short-term.jpg',
-  wedding: '../../../image/premium-img/wedding.jpg',
-  driving-tours: '../../../image/premium-img/driving-tour.jpg',
-  drive-experience: '../../../image/premium-img/drive-experience.jpg'
+  luxury-car: '../../../../image/premium-img/luxury-car.jpg',
+  private-lounge: '../../../../image/premium-img/private-lounge.jpg',
+  chaffeaur: '../../../../image/premium-img/chaffeaur-service.jpg',
+  long-term: '../../../../image/premium-img/long-term.jpg',
+  short-term: '../../../../image/premium-img/short-term.jpg',
+  wedding: '../../../../image/premium-img/wedding.jpg',
+  driving-tours: '../../../../image/premium-img/driving-tour.jpg',
+  drive-experience: '../../../../image/premium-img/drive-experience.jpg'
 );
 
 @mixin card-background($card-name) {
