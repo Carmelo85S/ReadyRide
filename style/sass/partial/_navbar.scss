@@ -1,7 +1,7 @@
 @use '../variable/color';
 @use '../variable/font';
 @use '../variable/theme';
-@import '../../mixin/mixins';
+@import '../mixin/mixins';
 
 header {
   border-bottom: 1px solid rgba(196, 192, 192, 0.3);
