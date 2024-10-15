@@ -98,14 +98,16 @@ header {
       margin: 0;
 
       &.active {
-        display: flex; 
-        max-height: 500px; 
+        display: flex;        
+        max-height: 100vh; 
+        height: calc(100vh - 70px); 
       }
 
       .link_item{
         padding: 20px;
       }
     }
+
     .email{
       display: none;
     }
