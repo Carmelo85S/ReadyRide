@@ -1,0 +1,70 @@
+@use '../variable/color';
+@use '../variable/font';
+@import '../mixin/mixins';
+
+.hero__container {
+  max-width: 100vw;
+  min-height: 600px;
+  width: 100%;
+  background-image: url(../image/alfa-romeo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+    .wrapper {
+      max-width: 1300px;
+      width: 100%;
+      min-height: 300px;
+      margin: auto;
+      @include container($justify-content: flex-start, $align-items: flex-start, $flex-direction: column);
+
+      &-title {
+        max-width: 700px;
+        width: 100%;
+        min-height: 30px;
+        font-family: font.$font-family;
+        font-weight: 200;
+        font-size: 90px;
+        letter-spacing: 10px;
+        color: color.$white;
+        line-height: 100px;
+        margin-bottom: 10px;
+        animation: slide-in-title 1.3s ease-in-out;
+
+        @keyframes slide-in-title {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+      }
+
+      &-info {
+        max-width: 700px;
+        width: 100%;
+        min-width: 100px;
+        font-family: font.$font-family;
+        font-weight: 200;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 30px;
+        letter-spacing: 2px;
+        animation: slide-in-info 1s ease-in-out;
+
+        @keyframes slide-in-info {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,123 @@
+@use '../variable/color';
+@use '../variable/font';
+@import '../mixin/mixins';
+
+.wrapper-why-ready-ride {
+  max-width: 100vw;
+  min-height: 800px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .8)),     
+      url(../image/speed.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @include container($justify-content: center, $align-items: center);
+
+  .why-container {
+    max-width: 1300px;
+    min-height: 600px;
+    width: 100%;
+    margin: 0 auto;
+
+    &-heading {
+      max-width: 650px;
+      width: 100%;
+      min-height: 100px;
+      margin-bottom: 20px;
+
+      .title {
+        font-family: font.$font-family;
+        font-weight: 400;
+        font-size: 70px;
+        letter-spacing: 10px;
+        color: color.$white;
+
+        span {
+          font-style: italic;
+          color: color.$golden;
+        }
+      }
+    }
+
+    .why-container-content {
+      @include container($flex-direction: row, $flex-wrap: wrap, $justify-content: space-between, $align-items: center);
+
+      .why-container-image {
+        max-width: 700px;
+        min-height: 400px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .why-container-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 2px;
+      }
+    }
+
+    .menu {
+      @include container($flex-direction: column, $align-items: center, $justify-content: center);
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 550px;
+      min-height: 500px;
+      margin-bottom: 20px;
+
+      &-title {
+        @include container($justify-content: space-between);
+        max-width: 550px;
+        min-height: 70px;
+        width: 100%;
+        margin-bottom: 20px;
+
+        .title {
+          font-family: font.$font-family;
+          font-weight: 300;
+          font-size: 25px;
+          letter-spacing: 2px;
+          color: color.$white;
+        }
+
+        .menu-cta {
+          @include cta;
+          background-color: inherit;
+          cursor: pointer;
+
+          &:hover {
+            background-color: color.$golden;
+            color: color.$light-black; 
+          }
+          
+          &:focus {
+            outline: 2px solid color.$golden; 
+          }
+        }                    
+      }
+
+      .info {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+
+        .paragraph {
+          font-family: font.$font-family;
+          letter-spacing: 1px;
+          font-size: 16px;
+          line-height: 30px;
+          color: color.$white;
+          margin-bottom: 15px;
+        }
+      }
+
+      .info.active {
+        max-height: 500px;
+      }
+    }
+  }
+}

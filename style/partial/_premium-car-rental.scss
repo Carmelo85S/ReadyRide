@@ -24,14 +24,14 @@ $card-backgrounds: (
   min-height: 100px;
   width: 100%;
   background-color: color.$light-black;
-  @include flex-center;
+  @include container($justify-content: center, $align-items: center);
   
   .premium__container {
     max-width: 1300px;
     min-height: 500px;
     width: 100%;
     margin: auto;
-    
+
     .premium__heading {
       max-width: 950px;
       width: 100%;
@@ -64,9 +64,7 @@ $card-backgrounds: (
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
+        @include container($flex-direction: column, $align-items: center);
         transition: transform 0.3s, box-shadow 0.3s;
         position: relative;
         
@@ -81,46 +79,43 @@ $card-backgrounds: (
           z-index: 1;
         }
 
-          .card-info-container {
-            padding: 20px;
-            text-align: center; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-            height: 100%;
-            position: relative;
-            z-index: 2; 
+        .card-info-container {
+          padding: 20px;
+          text-align: center;
+          @include container($flex-direction: column, $justify-content: flex-end, $align-items: center);
+          height: 100%;
+          position: relative;
+          z-index: 2;
 
-            .card-head{
-              font-family: font.$font-family;
-              color: color.$white;
-              margin-bottom: 10px;
-              font-size: 22px;
-              letter-spacing: 2px;
-            }
-
-              .card-info {
-                max-width: 250px;
-                width: 100%;
-                min-height: 50px;
-                font-family: font.$font-family;
-                letter-spacing: 1px;
-                font-size: 16px;
-                line-height: 30px;
-                color: color.$white;
-                margin-bottom: 15px;
-              }
-
-              .cta {
-                @include cta;
-              }
+          .card-head {
+            font-family: font.$font-family;
+            color: color.$white;
+            margin-bottom: 10px;
+            font-size: 22px;
+            letter-spacing: 2px;
           }
 
-          &:hover {
-            transform: scale(1.02);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+          .card-info {
+            max-width: 250px;
+            width: 100%;
+            min-height: 50px;
+            font-family: font.$font-family;
+            letter-spacing: 1px;
+            font-size: 16px;
+            line-height: 30px;
+            color: color.$white;
+            margin-bottom: 15px;
           }
+
+          .cta {
+            @include cta;
+          }
+        }
+
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
 
         &.luxury-car {
           @include card-background(luxury-car);
@@ -133,7 +128,6 @@ $card-backgrounds: (
         &.chauffeur {
           @include card-background(chauffeur);
         }
-        
 
         &.long-term {
           @include card-background(long-term);
