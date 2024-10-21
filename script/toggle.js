@@ -1,4 +1,4 @@
 function toggleNav() {
-    const linkList = document.getElementById("link_list"); // Use getElementById for IDs
+    const linkList = document.getElementById("link_list");
     linkList.classList.toggle("show");
 }

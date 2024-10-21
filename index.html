@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>Ride Ready - Rent a car</title>
@@ -14,23 +14,21 @@
 <body>
     <!--NAVIGATION-->
     <header>
-        <nav class="navigation" role="navigation">
-            <h3>Ride<span>Ready</span></h3>
-            <ul class="link_list" id="link_list" aria-label="Main Navigation">
-                <li class="link_item"><a class="link" href="#">HOME</a></li>
-                <li class="link_item"><a class="link" href="#">ABOUT US</a></li>
-                <li class="link_item"><a class="link" href="#">VEHICLES</a></li>
-                <li class="link_item"><a class="link" href="#">SERVICES</a></li>
-                <li class="link_item"><a class="link" href="#">CONTACT</a></li>
+        <nav class="navigation">
+            <h3 class="logo">Ready<span>Ride</span></h3>
+            <ul class="list-container" id="link_list">
+                <li><a class="active" href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">VEHICLE</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
-            <a class="email" href="mailto:info@rideready.com">
-                <i class="fas fa-envelope" aria-hidden="true"></i> info@rideready.com
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
             </a>
-
-            <i class="fa-solid fa-bars"></i>
         </nav>
     </header>
-     
+
     <!--HERO-->
     <section class="hero__container">
         <section class="wrapper">
@@ -185,9 +183,7 @@
         </section>
     </section>
     
-    
-    
-
+    <script src="./script/navigation.js"></script>
     <script src="./script/review.js"></script>
     <script src="./script/premium-service.js"></script>
     <script src="./script/show-hide.js"></script>

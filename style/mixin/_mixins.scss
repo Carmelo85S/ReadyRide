@@ -18,8 +18,8 @@
 }
 
 @mixin cta-car-slider{
-    background: linear-gradient(45deg, #007bff, #0056b3);
-    color: #fff;
+    background: color.$golden;
+    color: color.$light-black;
     border: none;
     border-radius: 50px;
     padding: 10px 20px;
@@ -30,9 +30,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     &:hover {
-      background: linear-gradient(45deg, #0056b3, #003c82);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      background-color: color.$hover-cta;
+      color: color.$light-black;
     }
 
     &:active {
