@@ -1,0 +1,78 @@
+@use '../variable/color';
+@use '../variable/font';
+@import '../mixin/mixins';
+
+.rental-in-sweden-wrapper{
+    max-width: 100vw;
+    width: 100%;
+    min-height: 500px;
+    background-color: color.$white;
+
+
+    .rental-in-sweden-heading{
+        max-width: 1300px;
+        width: 100%;
+        min-height: 100px;
+        margin-bottom: 20px;
+        margin: auto;
+
+        .heading{
+            font-family: font.$font-family;
+            font-weight: 300; 
+            font-size: 70px; 
+            letter-spacing: 10px;
+            color: color.$light-black;
+        }
+    }
+
+    .rental-in-sweden-container{
+        max-width: 1300px;
+        min-height: 800px;
+        width: 100%;
+        margin: auto;
+
+        .rental-in-sweden-content-container{
+            @include container(space-between, center, row, wrap);
+
+            .info{
+                max-width: 600px;
+                width: 100%;
+                min-height: 300px;
+
+                p{
+                    font-family: font.$font-family;
+                    font-weight: 200;
+                    font-size: 18px;
+                    color: color.$light-black;
+                    line-height: 30px;
+                    letter-spacing: 2px;
+                    text-align: justify;
+                }
+            }
+
+            .rental-in-sweden-img{
+                max-width: 600px;
+                min-height: 650px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+
+                .img-top{
+                    max-width: 600px;
+                    min-height: 200px;
+                    width: 100%;
+                }
+
+                .img-bottom{
+                    max-width: 600px;
+                    min-height: 200px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}

@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <img src="${car.image}" alt="${car.model}">
             <h3 class="car-model">${car.model}</h3>
             <p>${car.price}</p>
-            <button>More info</button>
+            <button>Rent now</button>
         `;
 
         return card;

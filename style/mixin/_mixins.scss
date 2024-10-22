@@ -6,7 +6,7 @@
   font-family: font.$font-family;
   font-size: 16px;
   letter-spacing: 1px;
-  border-radius: 25px;
+  border-radius: 15px;
   box-shadow: 1px 1px 5px color.$golden;
   margin-top: 10px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -21,7 +21,7 @@
     background: color.$golden;
     color: color.$light-black;
     border: none;
-    border-radius: 50px;
+    border-radius: 15px;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;

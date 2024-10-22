@@ -12,7 +12,7 @@
   background-size: cover;
 
     .wrapper {
-      max-width: 1300px;
+      max-width: 1200px;
       width: 100%;
       min-height: 300px;
       margin: auto;
@@ -46,11 +46,11 @@
       &-info {
         max-width: 700px;
         width: 100%;
-        min-width: 100px;
+        min-height: 170px;
         font-family: font.$font-family;
         font-weight: 200;
         font-size: 18px;
-        color: #FFFFFF;
+        color: color.$white;
         line-height: 30px;
         letter-spacing: 2px;
         animation: slide-in-info 1s ease-in-out;
@@ -65,6 +65,15 @@
             opacity: 1;
           }
         }
+      }
+
+      .book-now{
+        @include cta;
+        padding: 25px 40px;
+        font-size: 20px;
+        color: color.$dark-gray;
+        background-color: color.$golden;
+        cursor: pointer;
       }
     }
 }
