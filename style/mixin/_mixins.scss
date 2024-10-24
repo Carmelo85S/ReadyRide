@@ -15,6 +15,11 @@
     background-color: color.$hover-cta;
     color: color.$light-black;
   }
+
+  &:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
 }
 
 @mixin cta-car-slider{
@@ -28,6 +33,7 @@
     transition: background 0.4s ease, transform 0.3s ease;
     margin: 15px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: font.$font-family;
 
     &:hover {
       background-color: color.$hover-cta;
@@ -35,9 +41,34 @@
     }
 
     &:active {
-      transform: translateY(0);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: scale(0.95);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
+}
+
+@mixin submit{
+  background: color.$golden;
+  color: color.$light-black;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 90px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.3s ease;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: font.$font-family;
+
+  &:hover {
+    background-color: color.$hover-cta;
+    color: color.$light-black;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
 }
 
 @mixin container(

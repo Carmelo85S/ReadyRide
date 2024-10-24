@@ -5,7 +5,7 @@
 .rental-in-sweden-wrapper{
     max-width: 100vw;
     width: 100%;
-    min-height: 500px;
+    min-height: 200px;
     background-color: color.$white;
 
 
@@ -13,7 +13,6 @@
         max-width: 1300px;
         width: 100%;
         min-height: 100px;
-        margin-bottom: 20px;
         margin: auto;
 
         .heading{
@@ -27,24 +26,26 @@
 
     .rental-in-sweden-container{
         max-width: 1300px;
-        min-height: 800px;
+        min-height: 700px;
         width: 100%;
         margin: auto;
 
         .rental-in-sweden-content-container{
             @include container(space-between, center, row, wrap);
-
+            margin-bottom: 30px;
+            
             .info{
-                max-width: 600px;
+                max-width: 650px;
                 width: 100%;
-                min-height: 300px;
+                min-height: 680px;
+                @include container(space-between, flex-start, column);
 
                 p{
                     font-family: font.$font-family;
                     font-weight: 200;
                     font-size: 18px;
                     color: color.$light-black;
-                    line-height: 30px;
+                    line-height: 26px;
                     letter-spacing: 2px;
                     text-align: justify;
                 }

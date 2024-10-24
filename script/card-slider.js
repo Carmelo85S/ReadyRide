@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const prevButton = document.querySelector('.prev-button');
     const nextButton = document.querySelector('.next-button');
     
-    const scrollAmount = 250; 
+    const scrollAmount = 500; 
 
     nextButton.addEventListener('click', () => {
         cardContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });

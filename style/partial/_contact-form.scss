@@ -1,0 +1,85 @@
+@use '../variable/color';
+@use '../variable/font';
+@import '../mixin/mixins';
+
+.form-wrapper {
+    background-color: color.$white;
+    max-width: 100vw;
+    min-height: 600px;
+    width: 100%;
+
+    .form-heading{
+        max-width: 1300px;
+        width: 100%;
+        min-height: 100px;
+        margin: auto;
+
+        .heading{
+            font-family: font.$font-family;
+            font-weight: 300; 
+            font-size: 70px; 
+            letter-spacing: 10px;
+            color: color.$light-black;
+        }
+    }
+
+    .form-container {
+        max-width: 1300px;
+        min-height: 600px;
+        width: 100%;
+        margin: auto;
+        @include container(space-between, center, row, wrap);
+
+        .form{
+            max-width: 700px;
+            min-height: 300px;
+            width: 100%;
+            @include container(space-around, center, column);
+
+            label {
+                display: block;
+                margin-bottom: 0.5rem;
+                font-family: font.$font-family;
+                font-weight: 500;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 100%;
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+                border: 1px solid color.$light-black;
+                border-radius: 5px; 
+                font-family: font.$font-family;
+
+                &:hover{
+                    background-color: color.$cream;
+                }
+                &:focus {
+                    border-color: color.$dark-gray;
+                }
+            }
+
+            textarea{
+                resize: none;
+            }
+
+            button {
+                @include submit;
+            }
+        }
+
+        .map {
+            flex: 3;
+            padding: 1rem;
+
+            iframe {
+                max-width: 500px;
+                width: 100%;
+                min-height: 500px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
