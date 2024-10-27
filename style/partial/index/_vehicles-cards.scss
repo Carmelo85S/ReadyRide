@@ -1,6 +1,6 @@
-@use '../variable/color';
-@use '../variable/font';
-@import '../mixin/mixins';
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixins';
 
 .vehicle__container {
   @include container($justify-content: center, $align-items: center, $flex-direction: row);

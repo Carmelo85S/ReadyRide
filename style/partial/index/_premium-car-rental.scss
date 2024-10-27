@@ -1,6 +1,6 @@
-@use '../variable/color';
-@use '../variable/font';
-@import '../mixin/mixins';
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixins';
 
 $card-backgrounds: (
   luxury-car: '../image/premium-img/luxury-car.jpg',
@@ -39,10 +39,7 @@ $card-backgrounds: (
       margin-bottom: 20px;
 
       .heading {
-        font-family: font.$font-family;
-        font-weight: 300; 
-        font-size: 70px; 
-        letter-spacing: 10px;
+        @include title;
         color: color.$white;
       }
     }

@@ -1,6 +1,6 @@
-@use '../variable/color';
-@use '../variable/font';
-@import '../mixin/mixins';
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixins';
 
 .wrapper-most-wanted {
     background-color: color.$cream;
@@ -20,10 +20,7 @@
       margin: auto;
 
       .title {
-        font-family: font.$font-family;
-        font-weight: 400;
-        font-size: 70px;
-        letter-spacing: 10px;
+        @include title;
         color: color.$dark-gray;
       }
     }

@@ -83,3 +83,33 @@
   flex-direction: $flex-direction;
   flex-wrap: $flex-wrap;
 }
+
+@mixin info{
+  font-family: font.$font-family;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: color.$light-black;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+@mixin p-cta{
+  font-family: font.$font-family;
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: color.$white;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@mixin title{
+  font-family: font.$font-family;
+  font-weight: 400;
+  font-size: 70px;
+  letter-spacing: 10px;
+}

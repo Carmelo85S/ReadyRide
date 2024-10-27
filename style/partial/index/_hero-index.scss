@@ -1,15 +1,16 @@
-@use '../variable/color';
-@use '../variable/font';
-@import '../mixin/mixins';
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixins';
 
 .hero__container {
   max-width: 100vw;
-  min-height: 700px;
+  min-height: 600px;
   width: 100%;
   background-image: url(../image/alfa-romeo.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  display: flex;
 
     .wrapper {
       max-width: 1200px;
@@ -69,11 +70,80 @@
 
       .book-now{
         @include cta;
-        padding: 25px 40px;
+        padding: 15px 40px;
         font-size: 20px;
         color: color.$dark-gray;
         background-color: color.$golden;
         cursor: pointer;
       }
     }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+  .hero__container {
+  
+      .wrapper {
+        max-width: 900px;
+        width: 100%;
+        min-height: 300px;
+       
+        &-title {
+          max-width: 500px;
+          width: 100%;
+          min-height: 30px;
+          font-size: 50px;
+          letter-spacing: 10px;
+          line-height: 70px;
+          margin: 10px auto;
+          text-align: center;
+  
+          @keyframes slide-in-title {
+            0% {
+              transform: translateX(-100%);
+              opacity: 0;
+            }
+            100% {
+              transform: translateX(0);
+              opacity: 1;
+            }
+          }
+        }
+  
+        &-info {
+          max-width: 500px;
+          width: 100%;
+          min-height: 100px;
+          text-align: center;
+          margin: 10px auto;
+          line-height: 25px;
+          letter-spacing: 2px;
+          animation: slide-in-info 1s ease-in-out;
+  
+          @keyframes slide-in-info {
+            0% {
+              transform: translateX(-100%);
+              opacity: 0;
+            }
+            100% {
+              transform: translateX(0);
+              opacity: 1;
+            }
+          }
+        }
+  
+        .book-now{
+          align-self: center;
+          animation: fade-in 3s ease-in-out;
+  
+          @keyframes fade-in {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        }
+      }
+  }
 }

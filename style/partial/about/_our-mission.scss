@@ -1,0 +1,56 @@
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixins';
+
+.our-mission-wrapper{
+    max-width: 100vw;
+    min-height: 700px;
+    width: 100%;
+    background-color: color.$light-black;
+
+    .our-mission-heading-container{
+        max-width: 1300px;
+        min-height:100px;
+        width: 100%;
+        margin: auto;
+
+        .title{
+            @include title;
+            color: color.$white;
+        }
+    }
+
+    .our-mission-content-container{
+        max-width: 1300px;
+        min-height: 500px;
+        width: 100%;
+        @include container(space-between,center,row,wrap);
+        margin: auto;
+
+        .image-container{
+            max-width: 500px;
+            width: 100%;
+            min-height: 200px;
+
+            img{
+                border-radius: 4px;
+                width: 100%;
+            }
+        }
+
+        .info-container{
+            max-width: 650px;
+            width: 100%;
+            min-height: 400px;
+
+            .info{
+                @include info;
+                color: color.$white;
+
+                span{
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

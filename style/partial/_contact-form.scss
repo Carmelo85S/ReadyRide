@@ -15,10 +15,7 @@
         margin: auto;
 
         .heading{
-            font-family: font.$font-family;
-            font-weight: 300; 
-            font-size: 70px; 
-            letter-spacing: 10px;
+            @include title;
             color: color.$light-black;
         }
     }
