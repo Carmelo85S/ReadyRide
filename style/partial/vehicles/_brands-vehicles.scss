@@ -1,0 +1,39 @@
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixins';
+
+.brands-wrapper{
+    max-width: 100vw;
+    min-height: 200px;
+    width: 100%;
+
+    .brands-heading-container{
+        max-width: 1300px;
+        min-height: 50px;
+        width: 100%;
+        margin: auto;
+
+        .heading{
+            @include title;
+            font-size: 50px;
+            text-align: center;
+        }
+    }
+
+    .brands__container-vehicles-logos{
+        max-width: 1300px;
+        min-height: 200px;
+        width: 100%;
+        margin: auto;
+        @include container (space-evenly, center, row, wrap);
+
+        svg{
+            width: 150px;
+            transition: all 0.3s ease;
+
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+    }
+}

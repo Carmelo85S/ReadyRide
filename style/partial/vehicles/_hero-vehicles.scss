@@ -2,63 +2,91 @@
 @use '../../variable/font';
 @import '../../mixin/mixins';
 
-.wrapper-vehicles{
+.wrapper-vehicles {
     max-width: 100vw;
-    min-height: 90vh;
+    min-height: 30vh;
     width: 100%;
     background-color: color.$less-white;
 
-    .vehicles-container{
+    .vehicles-container {
         max-width: 1300px;
         min-height: 40vh;
         width: 100%;
         margin: auto;
         @include container(space-around, center, column);
 
-        &-heading{
+        &-heading {
             max-width: 1300px;
-            min-height: 100px;
-            width: 100%;    
+            min-height: 50px;
+            width: 100%;
 
-            .title{
+            .title {
                 @include title;
                 text-align: center;
             }
         }
 
-        .card-container{
+        .card-container {
             max-width: 1300px;
-            min-height: 300px;
+            min-height: 420px;
             width: 100%;
             @include container(space-around, center, row, wrap);
 
-            .image-container{
+            .image-container {
                 max-width: 320px;
-                min-height: 300px;
+                min-height: 250px;
                 width: 100%;
-                @include container (space-around, center, column);
+                @include container(space-between, center, column);
 
-                img{
+                img {
                     border-radius: 4px;
-                    border:1px solid black;
+                    border: 1px solid black;
                     box-shadow: 1px 2px 20px black;
                     max-width: 300px;
                     width: 100%;
-                    min-height: 100px;
-                    cursor:pointer;
-                    transition: all 0.2s ease;
+                    height: auto;
+                    cursor: pointer;
+                    transition: 0.2s ease-in-out;
+                    margin-bottom: 20px;
 
-                    &:hover{
+                    &:hover {
                         transform: scale(1.05);
                     }
                 }
 
-                .category{
+                .category {
                     @include h2;
                 }
 
-                .cta{
+                .cta {
                     @include cta-car-slider;
+                }
+            }
+
+            .slide-suv {
+                animation: slide .5s ease-in;
+            }
+            
+            .slide-sudan {
+                animation: slide 1s ease-in;
+            }
+            
+            .slide-performance {
+                animation: slide 1.5s ease-in;
+            }
+            
+            .slide-cabriolet {
+                animation: slide 2s ease-in;
+            }
+            
+            @keyframes slide {
+                from {
+                    transform: translatex(-80%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translatex(0);
+                    opacity: 1;
                 }
             }
         }
