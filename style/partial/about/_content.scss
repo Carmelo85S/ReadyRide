@@ -24,7 +24,7 @@
         max-width: 1300px;
         min-height: 500px;
         width: 100%;
-        @include container(space-between,center,row,wrap);
+        @include container(space-between, center,row, wrap);
         margin: auto;
 
         .info-container{
@@ -42,7 +42,7 @@
         }
 
         .image-container{
-            max-width: 600px;
+            max-width: 500px;
             width: 100%;
             min-height: 200px;
 
