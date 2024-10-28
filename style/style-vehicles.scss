@@ -1,0 +1,20 @@
+@import '../style/partial/navbar';
+@import '../style/partial/vehicles/hero-vehicles';
+@import '../style/partial/index/brands';
+@import '../style/partial/footer';
+
+*{
+    padding: o;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 70px;
+}
+
+html{
+    scroll-behavior: smooth;
+}

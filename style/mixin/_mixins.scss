@@ -92,8 +92,17 @@
   letter-spacing: 2px;
   color: color.$light-black;
   line-height: 26px;
-  letter-spacing: 2px;
   text-align: justify;
+}
+
+@mixin h2{
+  font-family: font.$font-family;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: color.$light-black;
+  line-height: 26px;
 }
 
 @mixin p-cta{
