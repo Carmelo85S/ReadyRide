@@ -3,14 +3,14 @@
 @import '../../mixin/mixins';
 
 $card-backgrounds: (
-  luxury-car: '../image/premium-img/luxury-car.jpg',
-  private-lounge: '../image/premium-img/private-lounge.jpg',
-  chauffeur: '../image/premium-img/chauffeur.jpg',
-  long-term: '../image/premium-img/long-term.jpg',
-  short-term: '../image/premium-img/short-term.jpg',
-  wedding: '../image/premium-img/wedding.jpg',
-  driving-tours: '../image/premium-img/driving-tour.jpg',
-  drive-experience: '../image/premium-img/drive-experience.jpg'
+  luxury-car: '../image-index/premium-img/luxury-car.jpg',
+  private-lounge: '../image-index/premium-img/private-lounge.jpg',
+  chauffeur: '../image-index/premium-img/chauffeur.jpg',
+  long-term: '../image-index/premium-img/long-term.jpg',
+  short-term: '../image-index/premium-img/short-term.jpg',
+  wedding: '../image-index/premium-img/wedding.jpg',
+  driving-tours: '../image-index/premium-img/driving-tour.jpg',
+  drive-experience: '../image-index/premium-img/drive-experience.jpg'
 );
 
 @mixin card-background($card-name) {

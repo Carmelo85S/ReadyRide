@@ -4,8 +4,8 @@
 
 /* Navbar */
 header {
-    background-color: black;
-    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
     position: fixed;
     top:0;
     width: 100%;
@@ -46,7 +46,7 @@ header {
             li {
                 a {
                     color: color.$white;
-                    padding: 22px 25px;
+                    padding: 18px 25px;
                     transition: all 0.2s ease, color 0.3s ease;
                     font-family: font.$font-family;
                     font-weight: 300;

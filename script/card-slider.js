@@ -3,82 +3,82 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const cars = [
         {
-            image: "./image/most-wanted/mustang.jpg",
+            image: "./image-index/most-wanted/mustang.jpg",
             model: "Ford Mustang",
             price: "From 20000 Sek per day"
         },
         {
-            image: "./image/most-wanted/bentley.jpg",
+            image: "./image-index/most-wanted/bentley.jpg",
             model: "Bentley",
             price: "From 25000 Sek per day"
         },
         {
-            image: "./image/most-wanted/bmw.jpg",
+            image: "./image-index/most-wanted/bmw.jpg",
             model: "BMW",
             price: "From 25000 Sek per day"
         },
         {
-            image: "./image/most-wanted/ferrari.jpg",
+            image: "./image-index/most-wanted/ferrari.jpg",
             model: "Ferrari",
             price: "From 30000 Sek per day"
         },
         {
-            image: "./image/most-wanted/lamborghini.jpg",
+            image: "./image-index/most-wanted/lamborghini.jpg",
             model: "Lamborghini",
             price: "From 35000 Sek per day"
         },
         {
-            image: "./image/most-wanted/alfa.jpg",
+            image: "./image-index/most-wanted/alfa.jpg",
             model: "Alfa Romeo",
             price: "From 10000 Sek per day"
         },
         {
-            image: "./image/most-wanted/porche.jpg",
+            image: "./image-index/most-wanted/porche.jpg",
             model: "Porche",
             price: "From 15000 Sek per day"
         },
         {
-            image: "./image/most-wanted/tesla.jpg",
+            image: "./image-index/most-wanted/tesla.jpg",
             model: "Tesla",
             price: "From 8000 Sek per day"
         },
         {
-            image: "./image/most-wanted/mustang.jpg",
+            image: "./image-index/most-wanted/mustang.jpg",
             model: "Ford Mustang",
             price: "From 20000 Sek per day"
         },
         {
-            image: "./image/most-wanted/bentley.jpg",
+            image: "./image-index/most-wanted/bentley.jpg",
             model: "Bentley",
             price: "From 25000 Sek per day"
         },
         {
-            image: "./image/most-wanted/bmw.jpg",
+            image: "./image-index/most-wanted/bmw.jpg",
             model: "BMW",
             price: "From 25000 Sek per day"
         },
         {
-            image: "./image/most-wanted/ferrari.jpg",
+            image: "./image-index/most-wanted/ferrari.jpg",
             model: "Ferrari",
             price: "From 30000 Sek per day"
         },
         {
-            image: "./image/most-wanted/lamborghini.jpg",
+            image: "./image-index/most-wanted/lamborghini.jpg",
             model: "Lamborghini",
             price: "From 35000 Sek per day"
         },
         {
-            image: "./image/most-wanted/alfa.jpg",
+            image: "./image-index/most-wanted/alfa.jpg",
             model: "Alfa Romeo",
             price: "From 10000 Sek per day"
         },
         {
-            image: "./image/most-wanted/porche.jpg",
+            image: "./image-index/most-wanted/porche.jpg",
             model: "Porche",
             price: "From 15000 Sek per day"
         },
         {
-            image: "./image/most-wanted/tesla.jpg",
+            image: "./image-index/most-wanted/tesla.jpg",
             model: "Tesla",
             price: "From 8000 Sek per day"
         },

@@ -1,20 +1,20 @@
 const reviews = [
     {
-      imgSrc: "./image/reviews-face/woman.png",
+      imgSrc: "./image-index/reviews-face/woman.png",
       altText: "woman face review icon",
       name: "Carla",
       location: "Stockholm",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus, in optio autem, cum debitis architecto asperiores magni iure fugit sed eligendi, illum facere ut! Ipsum eaque eos amet dolores."
     },
     {
-      imgSrc: "./image/reviews-face/woman.png",
+      imgSrc: "./image-index/reviews-face/woman.png",
       altText: "woman face review icon",
       name: "Carla",
       location: "Rome",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus, in optio autem, cum debitis architecto asperiores magni iure fugit sed eligendi, illum facere ut! Ipsum eaque eos amet dolores."
     },
     {
-      imgSrc: "./image/reviews-face/woman.png",
+      imgSrc: "./image-index/reviews-face/woman.png",
       altText: "woman face review icon",
       name: "Carla",
       location: "Stockholm",

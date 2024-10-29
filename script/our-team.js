@@ -4,42 +4,42 @@ const cardTeam = [
         info: 'Chief Executive Officer',
         email: 'g.andersson@example.com',
         className: 'team-member-card',
-        image: '../image/about/team/gustav.jpg'
+        image: '../image-about/team-gustav.jpg'
     },
     {
         name: "Hakan Flyngberg",
         info: 'Distribution Manager',
         email: 'h.flyngberg@example.com',
         className: 'team-member-card',
-        image: '../image/about/team/hakan.jpg'
+        image: '../image-about/team-hakan.jpg'
     },
     {
         name: "Elisabeth Bellucci",
         info: 'H.R. Director',
         email: 'e.bellucci@example.com',
         className: 'team-member-card',
-        image: '../image/about/team/elisabeth.jpg'
+        image: '../image-about/team-elisabeth.jpg'
     },
     {
         name: "Carl Pittolunghi",
         info: 'Chief Financial Officer',
         email: 'c.pittolunghi@example.com',
         className: 'team-member-card',
-        image: '../image/about/team/carl.jpg'
+        image: '../image-about/team-carl.jpg'
     },
     {
         name: "Anna Hogdson",
         info: 'Marketing Director',
         email: 'a.hogdson@example.com',
         className: 'team-member-card',
-        image: '../image/about/team/anna.jpg'
+        image: '../image-about/team-anna.jpg'
     },
     {
         name: "Melanie Chaffer",
         info: 'Executive Assistant',
         email: 'm.chaffer@example.com',
         className: 'team-member-card',
-        image: '../image/about/team/melanie.jpg'
+        image: '../image-about/team-melanie.jpg'
     }
 ];
 
