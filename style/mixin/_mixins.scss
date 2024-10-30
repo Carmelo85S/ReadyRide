@@ -105,6 +105,16 @@
   line-height: 26px;
 }
 
+@mixin h3{
+  font-family: font.$font-family;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: color.$light-black;
+  line-height: 26px;
+}
+
 @mixin p-cta{
   font-family: font.$font-family;
   font-weight: 200;
