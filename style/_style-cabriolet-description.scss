@@ -1,0 +1,176 @@
+@use './variable/color';
+@use './variable/font';
+@import './mixin/mixins';
+@import './partial/navbar';
+@import './partial/footer';
+
+
+*{
+    padding: o;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding-top:30px;
+    background-color: color.$less-white;
+}
+
+.title-container{
+    max-width: 1300px;
+    min-height: 100px;
+    width: 100%;
+    margin: auto;
+
+    .title{
+        @include title;
+    }
+}
+.hero{
+    max-width: 1300px;
+    width: 100%;
+    min-height: 400px;
+    margin:auto;
+    background-color: color.$white;
+    @include container(space-around,center,row,wrap);
+    box-shadow: 2px 2px 20px color.$light-black;
+
+
+    .info-container{
+        max-width: 600px;
+        width: 100%;
+        min-height: 300px;
+        border-radius:3px;
+
+        .info{
+            max-width: 600px;
+            min-height: 100px;
+            width: 100%;
+            @include info;
+        }
+    }
+
+    .img-container{
+        max-width: 600px;
+        min-height: 300px;
+        width: 100%;
+
+        img{
+            width: 550px;
+            height: auto;
+        }
+    }
+}
+.booking-wrapper{
+    max-width: 100vw;
+    width: 100%;
+    min-height: 600px;
+    background-color: color.$light-black;
+
+    .booking{
+        @include container(space-evenly, center, row, wrap);
+        max-width: 1300px;
+        width: 100%;
+        min-height: 600px;
+        margin: auto;
+
+        .gallery{
+            max-width: 650px;
+            width: 100%;
+            min-height: 500px;
+            @include container(space-around, center, row, wrap);
+
+
+            img{
+                width: 300px;
+                height: auto;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    transform: scale(1.02);
+                }
+            }
+        }
+
+        .booking-form-container{
+            @include container(space-around, center, column);
+                max-width: 650px;
+                min-height: 600px;
+                width: 100%;
+
+            .booking-form-icons{
+                @include container(space-around, center, row);
+                max-width: 500px;
+                min-height: 100px;
+                width: 100%;
+
+                .form-icons {
+                    @include container(space-between, center, row); 
+                    max-width: 500px;
+                    min-height: 100px;
+                    width: 100%;
+                
+                    .icons-left, .icons-right { 
+                        @include container(space-between, flex-start, column); 
+                        max-width: 200px;  
+                        min-height: 100px;
+                        width: 100%;
+                
+                        .i-container {
+                            display: flex; 
+                            align-items: center;
+                
+                            i {
+                                width: 20px;
+                                margin-right: 10px;
+                                color:color.$white;
+                            }
+                
+                            p {
+                                font-family: font.$font-family; 
+                                @include info;
+                                font-size: 12px;
+                                line-height: 1.5;
+                                margin: 0;
+                                color:color.$white;
+                            }
+                        }
+                    }
+                }
+                
+                
+            }
+        }
+
+        .booking-include{
+            max-width: 600px;
+            width: 100%;
+            min-height: 200px;
+            @include container(space-evenly, flex-start, column);
+
+            .title{
+                @include h2;
+                color: color.$white;
+                letter-spacing: 5px;
+                margin-bottom: 20px;
+            }
+
+            .list-container{
+                list-style: circle;
+
+                .info{
+                    @include info;
+                    margin-bottom:10px;
+                    color: color.$white;
+                }
+            }
+        }
+    }
+}
+

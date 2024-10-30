@@ -57,12 +57,12 @@ function createRentCard(name, image, className, link, price) {
                 <h3 class="card-head">${name}</h3>
             </section>
             <section class="card-image-container">
-                <a href="${link} target="_blank">
+                <a href="${link}" target="_blank">
                     <img src="${image}" alt="${name}">
                 </a>
             </section>
             <section class="card-prices-container">
-                <h3 class="card-prices">${price} per day</h3>
+                <h3 class="card-prices">${price} / per day</h3>
                 <p class="spec">* for one month rental</p>
             </section>
         </section>
