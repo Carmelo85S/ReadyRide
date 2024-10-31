@@ -50,7 +50,7 @@
                     <img src="../image-cabriolet/aston-martin-booking-front-grid.jpg" alt="Aston martin front aston-martin-booking-front-grid">
                 </section>
             </section>
-            <section class="booking-wrapper">
+            <section class="booking-info-wrapper">
                 <section class="booking">
                     <section class="gallery">
                         <img src="../image-cabriolet/aston-martin-booking.jpg" alt="Aston martin BD12">
@@ -104,6 +104,89 @@
                                 <li class="info">Included Third Party Liability Insurance</li>
                             </ul>
                         </section>
+                    </section>
+                </section>
+            </section>
+            <section class="form-wrapper">
+                <section class="form-container">
+                    <section class="form-left">
+                        <section class="wifi-i-container">
+                            <i class="fa-solid fa-wifi"></i>
+                            <form action="">
+                                <h3 class="wify">Add 5G Unlimited Wi-Fi hotspot </h3>
+                                <input type="checkbox" name="wifi" id="wifi">
+                                <label for="wify">5$ / day</label>
+                            </form>
+                        </section>
+                        <section class="child-seat-i-container">
+                            <i class="fa-solid fa-baby"></i>
+                            <form action="">
+                                <h3 class="child-seat">Add Child seat </h3>
+                                <input type="checkbox" name="child-seat" id="child-seat">
+                                <select id="child-seat-select">
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                </select>
+                                <h3 class="infant-seat">Add infant seat: </h3>
+                                <select id="infant-seat-select">
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                </select>
+                                <label for="child-seat">5$ per day</label>
+                            </form>
+                        </section>
+                    </section>
+                    <section class="form-right">
+                        <section class="form-text-container">
+                            <section class="text">
+                                <h3 class="info">
+                                    Please confirm pick-up &amp; return details:
+                                </h3>
+                            </section>
+                        </section>
+                        <form action="">
+                            <section class="date">
+                                <section class="pick-up">
+                                    <label for="pick-up">Select pick up date: </label>
+                                    <input type="date" name="pick-up" id="pick-up">
+                                </section>
+                                <section class="return">
+                                    <label for="return">Select return date: </label>
+                                    <input type="date" name="return" id="return">
+                                </section>
+                            </section>
+                            <section class="pick-up-return">
+                                <section class="pick-up-location">
+                                    <label for="pick-up-location">Select pick up location: </label>
+                                    <select id="pick-up-location">
+                                        <option value="stockholm">Stockholm</option>
+                                        <option value="malmö">Malmö</option>
+                                        <option value="kiruna">Kiruna</option>
+                                        <option value="uppsala">Uppsala</option>
+                                        <option value="göteborg">Göteborg</option>
+                                        <option value="lund">Lund</option>
+                                    </select>
+                                    <label for="time-pick-up">Time: </label>
+                                    <input type="time" name="time-pick-up" id="time-pick-up">
+                                </section>
+                                <section class="return-location">
+                                    <label for="return-location">Select return location: </label>
+                                    <select id="return-location">
+                                        <option value="stockholm">Stockholm</option>
+                                        <option value="malmö">Malmö</option>
+                                        <option value="kiruna">Kiruna</option>
+                                        <option value="uppsala">Uppsala</option>
+                                        <option value="göteborg">Göteborg</option>
+                                        <option value="lund">Lund</option>
+                                    </select>
+                                    <label for="time-return">Time: </label>
+                                    <input type="time" name="time-return" id="time-return">
+                                </section>    
+                            </section>
+                            <button class="submit" id="submit" type="submit">Submit</button>
+                        </form>
                     </section>
                 </section>
             </section>

@@ -132,3 +132,36 @@
   font-size: 70px;
   letter-spacing: 10px;
 }
+
+@mixin location-form{
+  max-width: 300px;
+  min-height: 100px;
+  width: 100%;
+  @include container(space-between, flex-start, column);
+  border: 1px solid black;
+  padding: 10px; 
+
+    label {
+        @include info;
+        margin-bottom: 8px;
+    }
+
+    select {
+        padding: 8px 12px;
+        @include info;
+        border-radius: 4px;
+        color: color.$dark-grey;
+        outline: none;
+        transition: border-color 0.3s ease;
+
+        &:hover {
+            border-color: #888;
+        }
+
+        &:focus {
+            border-color: #2196F3;
+            box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+        }
+      }
+    
+}

@@ -67,7 +67,7 @@ body{
         }
     }
 }
-.booking-wrapper{
+.booking-info-wrapper{
     max-width: 100vw;
     width: 100%;
     min-height: 600px;
@@ -84,7 +84,7 @@ body{
             max-width: 650px;
             width: 100%;
             min-height: 500px;
-            @include container(space-around, center, row, wrap);
+            @include container(space-between, center, row, wrap);
 
 
             img{
@@ -99,9 +99,9 @@ body{
         }
 
         .booking-form-container{
-            @include container(space-around, center, column);
+            @include container(space-between, center, column);
                 max-width: 650px;
-                min-height: 600px;
+                min-height: 500px;
                 width: 100%;
 
             .booking-form-icons{
@@ -143,33 +143,247 @@ body{
                         }
                     }
                 }
-                
-                
+            }
+
+            .booking-include{
+                max-width: 600px;
+                width: 100%;
+                min-height: 200px;
+                @include container(space-evenly, flex-start, column);
+
+                .title{
+                    @include h2;
+                    color: color.$white;
+                    letter-spacing: 5px;
+                    margin-bottom: 20px;
+                }
+
+                .list-container{
+                    list-style: circle;
+
+                    .info{
+                        @include info;
+                        margin-bottom:10px;
+                        color: color.$white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.form-wrapper{
+    max-width: 100vw;
+    min-height: 500px;
+    max-width: 100%;
+    display: flex;
+    background-color: color.$white;
+
+    .form-container{
+        max-width: 1300px;
+        min-height: 300px;
+        width: 100%;
+        margin: auto;
+        @include container(space-between, center, row, wrap);
+
+        .form-left{
+            max-width: 650px;
+            min-height: 300px;
+            width: 100%;
+            @include container(space-between, center, row, wrap);
+
+
+            .wifi-i-container{
+                max-width: 300px;
+                min-height: 300px;
+                width: 100%;
+                border:1px solid black;
+                @include container(space-around, center, column);
+
+                i{
+                    text-align: center;
+                    font-size: 50px;
+                }
+
+                form{
+                    max-width: 200px;
+                    min-height: 200px;
+                    width: 100%;
+                    @include container(space-around, center,column);
+
+                    .wify{
+                        @include h3;
+                    }
+
+                    label{
+                        @include info;
+                        font-weight: 500;
+                    }
+
+                    input{
+                        transform: scale(1.5)
+                    }
+                }
+            }
+
+            .child-seat-i-container{
+                max-width: 300px;
+                min-height: 300px;
+                width: 100%;
+                border:1px solid black;
+                @include container(space-evenly, center, column);
+
+                i{
+                    text-align: center;
+                    font-size: 50px;
+                }
+
+                form{
+                    max-width: 200px;
+                    min-height: 200px;
+                    width: 100%;
+                    @include container(space-around, center,column);
+
+                    .child-seat,
+                    .infant-seat{
+                        @include h3;
+                    }
+                    
+                    label{
+                        @include info;
+                        font-weight: 500;
+                    }
+
+                    input{
+                        transform: scale(1.5)
+                    }
+                }
             }
         }
 
-        .booking-include{
+        .form-right{
             max-width: 600px;
-            width: 100%;
             min-height: 200px;
-            @include container(space-evenly, flex-start, column);
+            width: 100%;
+            @include container(flex-start, flex-start, column);
 
-            .title{
-                @include h2;
-                color: color.$white;
-                letter-spacing: 5px;
-                margin-bottom: 20px;
-            }
+            .form-text-container{
+                max-width: 600px;
+                min-height: 50px;
+                width: 100%;
 
-            .list-container{
-                list-style: circle;
+                .text{
+                    max-width: 600px;
+                    min-height: 20px;
+                    width: 100%;
 
-                .info{
-                    @include info;
-                    margin-bottom:10px;
-                    color: color.$white;
+                    .info{
+                        @include h3;
+                    }
                 }
             }
+            form{
+                max-width: 800px;
+                min-height: 100px;
+                width: 100%;
+                @include container(space-between, flex-start, column);
+                
+                .date{
+                    max-width: 800px;
+                    min-height: 100px;
+                    width: 100%;
+                    @include container(space-between, center, row);
+                    
+                    .pick-up,
+                    .return{
+                        max-width: 400px;
+                        min-height: 50px;
+                        width: 100%;
+                        @include container(space-between, flex-start, column);
+
+                        label{
+                            @include info;
+                            font-weight: 500;
+                        }
+                        
+                        input{
+                            @include info;
+                        }
+                    }
+                }
+                .pick-up-return{
+                    max-width: 800px;
+                    min-height: 100px;
+                    width: 100%;
+                    @include container(space-between, center, row);
+
+                    .pick-up-location {
+                        max-width: 400px;
+                        min-height: 100px;
+                        width: 100%;
+                        @include container(space-between, flex-start, column);
+                        padding: 10px; 
+                    
+                        label {
+                            @include info;
+                            margin-bottom: 8px;
+                        }
+                    
+                        select, input[type="time"] {
+                            padding: 4px 10px;
+                            @include info;
+                            border-radius: 4px;
+                            color: color.$dark-gray;
+                            outline: none;
+                            transition: border-color 0.3s ease;
+                    
+                            &:hover {
+                                border-color: #888;
+                            }
+                    
+                            &:focus {
+                                border-color: #2196F3;
+                                box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+                            }
+                        }
+                    }
+
+                    .return-location {
+                        max-width: 400px;
+                        min-height: 100px;
+                        width: 100%;
+                        @include container(space-between, flex-start, column);
+                        padding: 10px; 
+                    
+                        label {
+                            @include info;
+                            margin-bottom: 8px;
+                        }
+                    
+                        select, input[type="time"] {
+                            padding: 4px 10px;
+                            @include info;
+                            border-radius: 4px;
+                            color: color.$dark-gray;
+                            outline: none;
+                            transition: border-color 0.3s ease;
+                    
+                            &:hover {
+                                border-color: #888;
+                            }
+                    
+                            &:focus {
+                                border-color: #2196F3;
+                                box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .submit{
+            @include submit;
         }
     }
 }
