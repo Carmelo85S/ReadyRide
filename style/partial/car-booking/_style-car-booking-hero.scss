@@ -1,0 +1,53 @@
+@use './variable/color';
+@use './variable/font';
+@import './mixin/mixins';
+@import './partial/navbar';
+@import './partial/footer';
+
+
+.title-container{
+    max-width: 1300px;
+    min-height: 100px;
+    width: 100%;
+    margin: auto;
+
+    .title{
+        @include title;
+    }
+}
+
+.hero{
+    max-width: 1300px;
+    width: 100%;
+    min-height: 400px;
+    margin:auto;
+    background-color: color.$white;
+    @include container(space-around,center,row,wrap);
+    box-shadow: 2px 2px 20px color.$light-black;
+
+
+    .info-container{
+        max-width: 600px;
+        width: 100%;
+        min-height: 300px;
+        border-radius:3px;
+
+        .info{
+            max-width: 600px;
+            min-height: 100px;
+            width: 100%;
+            @include info;
+        }
+    }
+
+    .img-container{
+        max-width: 600px;
+        min-height: 300px;
+        width: 100%;
+
+        img{
+            width: 550px;
+            height: auto;
+        }
+    }
+}

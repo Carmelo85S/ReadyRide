@@ -1,0 +1,382 @@
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixins';
+
+.form-wrapper{
+    max-width: 100vw;
+    min-height: 300px;
+    width: 100%;
+
+    .form-container{
+        max-width: 1300px;
+        min-height: 300px;
+        width: 100%;
+        margin:auto;
+        background-color: color.$white;
+        border-radius: 3px;
+        @include container(space-around, center, row, wrap);
+
+        form{
+            max-width: 1200px;
+            min-height: 500px;
+            width: 100%;
+            margin:auto;
+            @include container(space-around, center, row, wrap);
+
+        //form container left
+                .form-container-left{
+                    max-width: 450px;
+                    min-height: 300px;
+                    width: 100%;
+                    display:grid;
+                    grid-template-columns: repeat(1 , 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    gap:20px;
+
+
+                //Wi-fi-container
+                    .wi-fi-container{
+                        max-width: 180px;
+                        min-height: 180px;
+                        width: 100%;
+                        grid-area: 1 / 1 / 2 / 2;
+                        @include container(space-between, center, column);
+                        border:1px solid rgba(0, 0, 0, 0.2);
+                        border-radius:4px;
+
+                        &:hover{
+                            border:1px solid black;
+                        }
+
+                        .head{
+                            max-width: 180px;
+                            min-height: 20px;
+                            width: 100%;
+                            margin-top:10px;
+                            @include container(space-around);
+
+                            .fa-wifi{
+                                font-size: 26px;
+                            }
+
+                            .add-wi-fi{
+                                font-family: font.$font-family;
+                                font-size:16px;
+                            }
+                        }
+
+                        .cost-wi-fi{
+                            font-family: font.$font-family;
+                            font-size:16px;
+                            margin: 10px 0;
+                        }
+
+                        .checkbox{
+                            max-width: 100px;
+                            min-height: 20px;
+                            width: 100%;
+                            margin-bottom:10px;
+                            @include container(space-around);
+
+                            label{
+                                font-family: font.$font-family;
+                                font-size:16px; 
+                            }
+
+                            input{
+                                transform: scale(1.5);
+
+                                &:hover{
+                                    border-color:orange;
+                                }
+                            }
+                        }
+                    }
+
+                //Child Seat
+                    .child-seat-container{
+                        max-width: 300px;
+                        min-height: 360px;
+                        width: 100%;
+                        grid-area: 1 / 2/ 3 / 4;
+                        @include container(space-between, center, column);
+                        border:1px solid rgba(0, 0, 0, 0.2);
+                        border-radius:4px;
+
+
+                        &:hover{
+                            border:1px solid black;
+                        }
+
+                        .head{
+                            max-width: 180px;
+                            min-height: 20px;
+                            width: 100%;
+                            margin-top:10px;
+                            @include container(space-around);
+
+                            .fa-baby{
+                                font-size: 26px;
+                            }
+
+                            .child-seat{
+                                font-family: font.$font-family;
+                                font-size:16px;
+                            }
+                        }
+                    
+
+                        .number-of-seat{
+                            max-width: 180px;
+                            min-height: 100px;
+                            width: 100%;
+                            @include container(space-between, center, column);
+
+                            .info{
+                                font-family: font.$font-family;
+                                font-size:16px;
+                            }
+
+                            .info-s{
+                                font-family: font.$font-family;
+                                text-align: center;
+                                line-height: 15px;
+                                font-size:10px;
+                                margin-bottom: 10px;
+                            }
+
+                            label{
+                                font-family: font.$font-family;
+                                font-size:16px;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        .cost{
+                            
+                            &-seat{
+                                font-family: font.$font-family;
+                                font-size:16px;
+
+                                margin: 10px;
+                            }
+                        }
+                    }
+
+                //Additional driver
+                    .add-driver-container{
+                        max-width: 180px;
+                        min-height: 180px;
+                        width: 100%;
+                        grid-area: 2 / 1 / 2 / 4;
+                        @include container(space-between, center, column);
+                        border:1px solid rgba(0, 0, 0, 0.2);
+                        border-radius:4px;
+
+
+                        &:hover{
+                            border:1px solid black;
+                        }
+                        
+                        .head{
+                            max-width: 200px;
+                            min-height: 20px;
+                            width: 100%;
+                            margin-top:10px;
+                            @include container(space-around);
+
+                            .fa-person{
+                                font-size: 26px;
+                            }
+
+                            .add-driver-seat{
+                                font-family: font.$font-family;
+                                font-size:16px;
+                            }
+                        }
+
+                        .cost{
+
+                            &-driver{
+                                font-family: font.$font-family;
+                                font-size:16px;
+                                margin: 10px 0;
+                            }
+                        }
+
+                        .number-of-driver{
+                            max-width: 100px;
+                            width: 100%;
+                            min-height: 40px;
+                            margin: 10px 0;
+                            display: flex;
+                            flex-direction: column;
+
+                            label{
+                                font-family: font.$font-family;
+                                font-size:16px;
+                                text-align: center;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                    }
+            }
+
+            //form container right
+            .form-container-right{
+                max-width: 700px;
+                min-height: 300px;
+                width: 100%;
+                border:1px solid rgba(0, 0, 0, 0.2);
+                border-radius:4px;
+
+                &:hover{
+                    border:1px solid black;
+                }
+
+                .pick-up-location-time{
+                    max-width: 600px;
+                    min-height: 50px;
+                    width: 100%;
+                    margin: auto;
+                    @include container(space-around, center, row, nowrap);
+
+                    .pick-up-label{
+                        font-family: font.$font-family;
+                        font-size:16px; 
+                    }
+
+                    .pick-up-time-label{
+                        font-family: font.$font-family;
+                        font-size:16px; 
+                    }
+
+                    input{
+                        font-family: font.$font-family;
+                        font-size:12px; 
+                        
+                        &:hover{
+                            background-color: color.$cream;
+                        }
+                        &:focus {
+                            border-color: color.$dark-gray;
+                        }
+                    }
+                }
+
+                .return-location-time{
+                    max-width: 600px;
+                    min-height: 50px;
+                    width: 100%;
+                    margin: auto;
+                    @include container(space-around, center, row, nowrap);
+
+                    .return-label{
+                        font-family: font.$font-family;
+                        font-size:16px; 
+                    }
+
+                    .return-time-label{
+                        font-family: font.$font-family;
+                        font-size:16px; 
+                    }
+
+                    input{
+                        font-family: font.$font-family;
+                        font-size:12px;
+
+                        &:hover{
+                            background-color: color.$cream;
+                        }
+                        &:focus {
+                            border-color: color.$dark-gray;
+                        }
+                    }
+                }
+
+                .message-container{
+                    max-width: 600px;
+                    min-height: 210px;
+                    width: 100%;
+                    margin: auto;
+                    @include container(space-around, center, column,);
+
+                    .user-information{
+                        max-width: 550px;
+                        width: 100%;
+                        min-height: 40px;
+                        @include container(space-evenly, center, row, wrap);
+
+                        label{
+                            font-family: font.$font-family;
+                            font-size:16px;  
+                        }
+
+                        input{
+                            width: 200px;
+                            padding: 5px;
+                            margin-bottom: 1rem;
+                            border: 1px solid color.$light-black;
+                            border-radius: 5px; 
+                            font-family: font.$font-family;
+            
+                            &:hover{
+                                background-color: color.$cream;
+                            }
+                            &:focus {
+                                border-color: color.$dark-gray;
+                            }
+
+                        }
+                    }
+
+                    label{
+                        font-family: font.$font-family;
+                        font-size:16px;  
+                    }
+
+                    textarea {
+                        width: 80%;
+                        padding: 0.5rem;
+                        margin-bottom: 1rem;
+                        border: 1px solid color.$light-black;
+                        border-radius: 5px; 
+                        font-family: font.$font-family;
+        
+                        &:hover{
+                            background-color: color.$cream;
+                        }
+                        &:focus {
+                            border-color: color.$dark-gray;
+                        }
+                    }
+        
+                    textarea{
+                        resize: none;
+                    }
+                }
+
+                .form-btn{
+                    max-width: 300px;
+                    width: 100%;
+                    min-height: 50px;
+                    margin: auto;
+                    @include container(space-around, center,row, wrap);
+
+                    button{
+                        @include submit;
+                        padding:10px 30px;
+                    }
+
+                    .reset{
+                        &hover{
+                            background-color: red;
+                        }
+                    }
+                }
+                    
+            }
+        }
+    }
+}
