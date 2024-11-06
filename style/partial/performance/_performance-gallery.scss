@@ -1,0 +1,113 @@
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixins';
+@import '../navbar';
+@import '../footer';
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 30px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.performance-gallery-wrapper{
+    max-width: 100vw;
+    width: 100%;
+    min-height: 100vh;
+
+    .performance-gallery-container{
+        max-width: 1300px;
+        min-height: 100vh;
+        width: 100%;
+        margin: auto;
+        
+        .title-container{
+            max-width: 1300px;
+            min-height: 100px;
+            width: 100%;
+
+            .heading{
+                @include title;
+                text-align: center;
+            }
+        }
+
+        .performance-gallery{
+            max-width: 1300px;
+            min-height: 100vh;
+            width: 100%;
+            @include container(space-between, center, row, wrap);
+            
+            .card{
+                max-width: 400px;
+                min-height: 340px;
+                width: 100%;
+                margin-bottom: 40px;
+                transition: all 0.1s ease-in-out;
+                border:1px solid color.$grey;
+                @include container(space-around, center, column);
+
+                
+                &:hover{
+                    border:2px solid color.$brown;
+                }
+
+                &-model-container{
+                    max-width: 400px;
+                    width: 100%;
+                    min-height: 20px;
+
+                    .card-head{
+                        @include title;
+                        font-size:20px;
+                        font-weight: 500;
+                        text-align: center;
+                        letter-spacing: 2px;
+                        color:color.$light-black;
+                    }
+                }
+
+                .card-image-container{
+                    max-width: 400px;
+                    min-height: 200px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    img{
+                        max-width: 300px;
+                        width: 100%;
+                        min-height: auto;
+                        border-radius: 1px;
+                    }
+                }
+
+                .card-prices-container{
+                    max-width: 400px;
+                    min-height: 50px;
+                    width: 100%; 
+                    @include container (space-between, center, column);
+
+                    .card-prices{
+                        @include h3;
+                    }
+
+                    .spec{
+                        @include info;
+                        font-size:12px;
+                    }
+                }
+            }
+        }
+    }
+}

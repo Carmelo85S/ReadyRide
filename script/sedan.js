@@ -1,47 +1,49 @@
 const rentCarData = [
     {
-        name: 'Aston Martin DB12',
-        image: '../../image-cabriolet/aston-martin.jpg',
-        class: 'cabriolet',
-        link: 'aston-martin.html',
+        name: 'Mercedes-Benz S-Class',
+        image: '../../image-sedan/mercedes-s-class.jpg',
+        class: 'sedan',
+        link: 'mercedes-s-class.html',
         price: '$1,200',
     },
     {
-        name: 'BMW 4 Series',
-        image: '../../image-cabriolet/bmw430.jpg',
-        class: 'cabriolet',
-        link: 'bmw430.html',
-        price: '$400',
+        name: 'BMW 7 Series',
+        image: '../../image-sedan/bmw-7-series.jpg',
+        class: 'sedan',
+        link: 'bmw-7-series.html',
+        price: '$1,100',
     },
     {
-        name: 'BMW 8 Series M8',
-        image: '../../image-cabriolet/bmw-8.jpg',
-        class: 'cabriolet',
-        link: 'bmw8.html',
-        price: '$700',
+        name: 'Audi A8',
+        image: '../../image-sedan/audi-a8.jpg',
+        class: 'sedan',
+        link: 'audi-a8.html',
+        price: '$1,000',
     },
     {
-        name: 'BMW Z4',
-        image: '../../image-cabriolet/bmw-z4.jpg',
-        class: 'cabriolet',
-        link: 'bmw-z4.html',
-        price: '$500',
+        name: 'Lexus LS',
+        image: '../../image-sedan/lexus-ls.jpg',
+        class: 'sedan',
+        link: 'lexus-ls.html',
+        price: '$1,150',
     },
     {
-        name: 'Porsche 911 Turbo',
-        image: '../../image-cabriolet/porsche911turbo.jpg',
-        class: 'cabriolet',
-        link: 'porsche.html',
-        price: '$350',
+        name: 'Jaguar XJ',
+        image: '../../image-sedan/jaguar-xj.jpg',
+        class: 'sedan',
+        link: 'jaguar-xj.html',
+        price: '$1,100',
     },
     {
-        name: 'Ford Mustang',
-        image: '../../image-cabriolet/ford-mustang.jpg',
-        class: 'cabriolet',
-        link: 'ford-mustang.html',
-        price: '$300',
+        name: 'Genesis G90',
+        image: '../../image-sedan/genesis-g90.jpg',
+        class: 'sedan',
+        link: 'genesis-g90.html',
+        price: '$1,000',
     }
 ];
+
+
 
 function createRentCard(name, image, className, link, price) {
     return `

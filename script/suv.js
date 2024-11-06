@@ -1,47 +1,48 @@
 const rentCarData = [
     {
-        name: 'Aston Martin DB12',
-        image: '../../image-cabriolet/aston-martin.jpg',
-        class: 'cabriolet',
-        link: 'aston-martin.html',
+        name: 'Range Rover Autobiography',
+        image: '../../image-suv/range-rover-autobiography.jpg',
+        class: 'suv',
+        link: 'range-rover-autobiography.html',
+        price: '$1,500',
+    },
+    {
+        name: 'Mercedes-Benz G-Class',
+        image: '../../image-suv/mercedes-g-class.jpg',
+        class: 'suv',
+        link: 'mercedes-g-class.html',
+        price: '$1,800',
+    },
+    {
+        name: 'BMW X7',
+        image: '../../image-suv/bmw-x7.jpg',
+        class: 'suv',
+        link: 'bmw-x7.html',
         price: '$1,200',
     },
     {
-        name: 'BMW 4 Series',
-        image: '../../image-cabriolet/bmw430.jpg',
-        class: 'cabriolet',
-        link: 'bmw430.html',
-        price: '$400',
+        name: 'Audi Q8',
+        image: '../../image-suv/audi-q8.jpg',
+        class: 'suv',
+        link: 'audi-q8.html',
+        price: '$1,100',
     },
     {
-        name: 'BMW 8 Series M8',
-        image: '../../image-cabriolet/bmw-8.jpg',
-        class: 'cabriolet',
-        link: 'bmw8.html',
-        price: '$700',
+        name: 'Lexus LX',
+        image: '../../image-suv/lexus-lx.jpg',
+        class: 'suv',
+        link: 'lexus-lx.html',
+        price: '$1,250',
     },
     {
-        name: 'BMW Z4',
-        image: '../../image-cabriolet/bmw-z4.jpg',
-        class: 'cabriolet',
-        link: 'bmw-z4.html',
-        price: '$500',
-    },
-    {
-        name: 'Porsche 911 Turbo',
-        image: '../../image-cabriolet/porsche911turbo.jpg',
-        class: 'cabriolet',
-        link: 'porsche.html',
-        price: '$350',
-    },
-    {
-        name: 'Ford Mustang',
-        image: '../../image-cabriolet/ford-mustang.jpg',
-        class: 'cabriolet',
-        link: 'ford-mustang.html',
-        price: '$300',
+        name: 'Cadillac Escalade',
+        image: '../../image-suv/cadillac-escalade.jpg',
+        class: 'suv',
+        link: 'cadillac-escalade.html',
+        price: '$1,300',
     }
 ];
+
 
 function createRentCard(name, image, className, link, price) {
     return `
