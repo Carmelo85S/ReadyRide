@@ -40,13 +40,6 @@ const rentCarData = [
         class: 'cabriolet',
         link: 'ford-mustang.html',
         price: '$300',
-    },
-    {
-        name: 'Maserati Grand Cabrio',
-        image: '../image-cabriolet/maserati.jpg',
-        class: 'cabriolet',
-        link: 'maserati-grand-cabrio.html',
-        price: '$1,000',
     }
 ];
 

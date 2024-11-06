@@ -19,7 +19,7 @@
             <ul class="list-container" id="link_list">
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT US</a></li>
-                <li><a class="active" href="#">VEHICLE</a></li>
+                <li><a class="active" href="./vehicles.html">VEHICLE</a></li>
                 <li><a href="#">SERVICE</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
@@ -34,18 +34,18 @@
         <h1 class="title">
             BMW Z4
         </h1>
+        <a class="back" href="./cabriolet.html">Return to Cabriolet</a>
     </section>
     <section class="hero">
         <section class="info-container">
             <p class="info">
-                Experience the exhilarating blend of performance and elegance with the BMW 4-Series, 
-                particularly the high-performance M4 model. Renowned for its dynamic driving capabilities, 
-                the M4 is powered by a robust engine that delivers an impressive output, allowing for rapid acceleration
-                 and agile handling.
-                With its sleek coupe design, the 4-Series boasts an athletic silhouette that turns heads on every road. 
-                Inside, you'll find a meticulously crafted cabin featuring premium materials and advanced technology, 
-                ensuring a luxurious driving experience. Rent the BMW 4-Series or M4 for 
-                your next journey and indulge in the perfect combination of luxury and performance.
+                Embrace open-road freedom and precision with the BMW Z4, an icon of roadster design and performance. 
+                With its striking lines, retractable soft top, and finely tuned suspension, the Z4 is engineered 
+                for an exhilarating drive. The M40i model boasts a powerful turbocharged engine, sprinting from 
+                0 to 60 in under 4 seconds, while its adaptive suspension and near-perfect weight distribution 
+                deliver a balanced, dynamic experience. Inside, the driver-focused cockpit combines premium materials, 
+                sports seating, and advanced tech like the Harman Kardon sound system and digital driver aids, creating 
+                an immersive ride in pure luxury.
             </p>
         </section>
         <section class="img-container">
@@ -115,85 +115,131 @@
     <!--FORM-->
     <section class="form-wrapper">
         <section class="form-container">
-            <section class="form-left">
-                <section class="wifi-i-container">
-                    <i class="fa-solid fa-wifi"></i>
-                    <form action="">
-                        <h3 class="wify">Add 5G Unlimited Wi-Fi hotspot </h3>
-                        <input type="checkbox" name="wifi" id="wifi">
-                        <label for="wify">5$ / day</label>
-                    </form>
-                </section>
-                <section class="child-seat-i-container">
-                    <i class="fa-solid fa-baby"></i>
-                    <form action="">
-                        <h3 class="child-seat">Add Child seat </h3>
-                        <input type="checkbox" name="child-seat" id="child-seat">
-                        <select id="child-seat-select">
-                            <option value="one">1</option>
-                            <option value="two">2</option>
-                            <option value="three">3</option>
-                        </select>
-                        <h3 class="infant-seat">Add infant seat: </h3>
-                        <select id="infant-seat-select">
-                        <option value="one">1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        </select>
-                        <label for="child-seat">5$ per day</label>
-                    </form>
-                </section>
-            </section>
-            <section class="form-right">
-                <section class="form-text-container">
-                    <section class="text">
-                        <h3 class="info">
-                            Please confirm pick-up &amp; return details:
-                        </h3>
-                    </section>
-                </section>
-                <form action="">
-                    <section class="date">
-                        <section class="pick-up">
-                            <label for="pick-up">Select pick up date: </label>
-                            <input type="date" name="pick-up" id="pick-up">
+            <!-- Single Form Tag Enclosing Both Containers -->
+            <form action="" method="">
+            
+                <!-- Left container -->
+                <section class="form-container-left">
+                    <!-- Wi-Fi Section -->
+                    <section class="wi-fi-container">
+                        <section class="head">
+                            <i class="fa-solid fa-wifi"></i>
+                            <h3 class="add-wi-fi">5G WiFi Hotspot</h3>
                         </section>
-                        <section class="return">
-                            <label for="return">Select return date: </label>
-                            <input type="date" name="return" id="return">
+                        <h3 class="cost-wi-fi">€ 5.00 / day</h3>
+                        <section class="checkbox">
+                            <label for="wifi-checkbox">Add Wi-Fi</label>
+                            <input type="checkbox" id="wifi-checkbox" name="add_wifi">
                         </section>
                     </section>
-                    <section class="pick-up-return">
-                        <section class="pick-up-location">
-                            <label for="pick-up-location">Select pick up location: </label>
-                            <select id="pick-up-location">
-                                <option value="stockholm">Stockholm</option>
-                                <option value="malmö">Malmö</option>
-                                <option value="kiruna">Kiruna</option>
-                                <option value="uppsala">Uppsala</option>
-                                <option value="göteborg">Göteborg</option>
-                                <option value="lund">Lund</option>
+                
+                    <!-- Child Seat Section -->
+                    <section class="child-seat-container">
+                        <section class="head">
+                            <i class="fa-solid fa-baby"></i>
+                            <h3 class="child-seat">Add Child Seat</h3>
+                        </section>
+                        <!-- Infant Seat -->
+                        <section class="number-of-seat">
+                            <p class="info">Add infant seat</p>
+                            <p class="info-s">*Infants up to 12 months old.</p>
+                            <label for="infant-seat-select">Select</label>
+                            <select id="infant-seat-select" name="infant_seat">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
                             </select>
-                            <label for="time-pick-up">Time: </label>
-                            <input type="time" name="time-pick-up" id="time-pick-up">
                         </section>
-                        <section class="return-location">
-                            <label for="return-location">Select return location: </label>
-                            <select id="return-location">
-                                <option value="stockholm">Stockholm</option>
-                                <option value="malmö">Malmö</option>
-                                <option value="kiruna">Kiruna</option>
-                                <option value="uppsala">Uppsala</option>
-                                <option value="göteborg">Göteborg</option>
-                                <option value="lund">Lund</option>
+                    
+                        <!-- Toddler Seat -->
+                        <section class="number-of-seat">
+                            <p class="info">Add toddler seat</p>
+                            <p class="info-s">*Toddlers 1-4 years old.</p>
+                            <label for="toddler-seat-select">Select</label>
+                            <select id="toddler-seat-select" name="toddler_seat">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
                             </select>
-                            <label for="time-return">Time: </label>
-                            <input type="time" name="time-return" id="time-return">
-                        </section>    
+                        </section>
+                        <section class="cost">
+                            <h4 class="cost-seat">€ 2.50-7.00 / day &amp; seat</h4>
+                        </section>
                     </section>
-                    <button class="submit" id="submit" type="submit">Submit</button>
-                </form>
-            </section>
+                
+                    <!-- Extra Driver Section -->
+                    <section class="add-driver-container">
+                        <section class="head">
+                            <i class="fa-solid fa-person"></i>
+                            <h3 class="add-driver-seat">Additional Driver</h3>
+                        </section>
+                        <section class="cost">
+                            <h4 class="cost-driver">€4 EUR / day &amp; driver</h4>
+                        </section>
+                        <section class="number-of-driver">
+                            <label for="driver-select">Select</label>
+                            <select id="driver-select" name="additional_driver">
+                                <option value="">Add driver</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </section>
+                    </section>
+                </section>
+            
+                <!-- Right container -->
+                <section class="form-container-right">
+                    <!-- Pickup Location Section -->
+                    <section class="pick-up-location-time">
+                        <label class="pick-up-label" for="pick-up">Pick up location</label>
+                        <select id="pick-up" name="pickup_location" required>
+                            <option value="">Select a Location</option>
+                            <option value="stockholm-location">Stockholm - Downtown</option>
+                            <option value="goteborg-location2">Göteborg - Airport</option>
+                            <option value="malmö-location">Malmö - City Center</option>
+                            <option value="lund-location">Lund - Green Park</option>
+                        </select>
+                        
+                        <label class="pick-up-time-label" for="pick-up-time">Pick up date and time</label>
+                        <input type="datetime-local" id="pick-up-time" name="pickup_time" required>
+                    </section>
+                
+                    <!-- Return Location Section -->
+                    <section class="return-location-time">
+                        <label class="return-label" for="return">Return location</label>
+                        <select id="return" name="return_location">
+                            <option value="">Select a Location</option>
+                            <option value="stockholm-location">Stockholm - Downtown</option>
+                            <option value="goteborg-location2">Göteborg - Airport</option>
+                            <option value="malmö-location">Malmö - City Center</option>
+                            <option value="lund-location">Lund - Green Park</option>
+                        </select>
+                        
+                        <label class="return-time-label" for="return-time">Return date and time</label>
+                        <input type="datetime-local" id="return-time" name="return_time" required>
+                    </section>
+                    
+                    <!--Message-->
+                    <section class="message-container">
+                        <div class="user-information">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name" placeholder="Insert your name" required>
+                        
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" placeholder="Insert your email" required>
+                        </div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" maxlength="1500" rows="5" placeholder="Insert your message"></textarea>
+                    </section>
+                    <section class="form-btn">
+                        <button class="submit" type="submit">Submit</button>
+                        <button class="reset" type="reset">Reset</button>
+                    </section>
+                </section>
+            </form>
         </section>
     </section>
 

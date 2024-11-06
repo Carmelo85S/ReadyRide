@@ -10,9 +10,22 @@
     min-height: 100px;
     width: 100%;
     margin: auto;
+    @include container ($justify-content: space-around, $flex-wrap:wrap);
 
     .title{
         @include title;
+    }
+
+    .back{
+        
+        font-style: italic;
+        @include info;
+        transition: 0.2s ease-in-out;
+
+        &:hover{
+            color: color.$light-black;
+            border-bottom: 1px solid black;
+        }
     }
 }
 
