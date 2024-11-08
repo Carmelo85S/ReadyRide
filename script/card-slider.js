@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
             price: "From 10000 Sek per day"
         },
         {
-            image: "./image-index/most-wanted/porche.jpg",
-            model: "Porche",
+            image: "./image-index/most-wanted/porsche.jpg",
+            model: "Porsche",
             price: "From 15000 Sek per day"
         },
         {
@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function() {
             price: "From 10000 Sek per day"
         },
         {
-            image: "./image-index/most-wanted/porche.jpg",
-            model: "Porche",
+            image: "./image-index/most-wanted/porsche.jpg",
+            model: "Porsche",
             price: "From 15000 Sek per day"
         },
         {

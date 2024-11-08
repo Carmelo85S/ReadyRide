@@ -17,10 +17,30 @@
         <nav class="navigation">
             <h3 class="logo">Ride<span>Ready</span></h3>
             <ul class="list-container" id="link_list">
-                <li><a href="../../index.html">HOME</a></li>
+                <li><a class="active" href="../../index.html">HOME</a></li>
                 <li><a href="../about.html">ABOUT US</a></li>
-                <li><a class="active" href="../vehicles.html">VEHICLE</a></li>
-                <li><a href="#">SERVICE</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">VEHICLE</a>
+                    <ul class="dropdown-content">
+                        <li><a class="dropbtn" href="../cabriolet/cabriolet.html">CABRIOLET</a></li>
+                        <li><a class="dropbtn" href="../performance/performance.html">PERFORMANCE</a></li>
+                        <li><a class="dropbtn" href="./suv.html">SUV</a></li>
+                        <li><a class="dropbtn" href="../sedan/sedan.html">SEDAN</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="../services.html">SERVICE</a>
+                    <ul class="dropdown-content-service">
+                        <li><a class="dropbtn" href="../services/monthly-sub.html">MONTHLY SUB.</a></li>
+                        <li><a class="dropbtn" href="../services/chauffeur.html">CHAUFFEUR</a></li>
+                        <li><a class="dropbtn" href="../services/private-lounge.html">PRIVATE LOUNGE</a></li>
+                        <li><a class="dropbtn" href="../services/long-term-rental.html">LONG TERM </a></li>
+                        <li><a class="dropbtn" href="../services/short-term-rental.html">SHORT TERM </a></li>
+                        <li><a class="dropbtn" href="../services/wedding-car.html">WEDDING CAR</a></li>
+                        <li><a class="dropbtn" href="../services/driving-tour.html">DRIVING TOUR</a></li>
+                        <li><a class="dropbtn" href="../services/drive-experience.html">DRIVE EXPERIENCE</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
             <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
