@@ -1,0 +1,178 @@
+@use '../navbar';
+@use '../contact-form';
+@use '../footer';
+@use '../../variable/color';
+@use '../../variable/font';
+@import '../../mixin/mixins';
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 30px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+//HERO
+.wrapper-chauffeur{
+    max-width: 100vw;
+    width: 100%;
+    min-height: 50vh;
+    background-image: url(../../../image-services/service/hero-service-all.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+
+    .chauffeur-container{
+        max-width: 1300px;
+        width: 100%;
+        min-height: 50vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .chauffeur-container-heading{
+            max-width: 500px;
+            min-height: 30px;
+            width: 100%;
+            margin-left: 100px;
+
+            .title{
+                max-width: 400px;
+                width: 100%;
+                min-height: 30px;
+                font-family: font.$font-family;
+                font-weight: 200;
+                font-size: 90px;
+                letter-spacing: 10px;
+                color: color.$golden;
+                line-height: 100px;
+            }
+        }
+    }
+}
+
+//INFO
+.wrapper-info{
+    max-width: 100vw;
+    min-height: 500px;
+    width: 100%;
+    display: flex;;
+
+    .info-container{
+        max-width: 1300px;
+        min-height: 450px;
+        width: 100%;
+        margin: auto;
+        @include container(space-between, center, row, wrap);
+
+        .info-text-container-left{
+            max-width: 500px;
+            width: 100%;
+            min-height: 350px;
+            @include container(space-between, flex-start, column);
+            align-items: flex-start;
+
+            .head{
+                @include h2;
+            }
+
+            .info{
+                @include info;
+                font-size: 16px;
+            }
+
+            .cta{
+                @include cta-extra;
+            }
+        }
+
+        .img-info-container-right{
+            max-width: 600px;
+            min-height: 300px;
+            width: 100%;
+            @include container(space-between, center, column);
+
+            .img-info{
+                max-width: 600px;
+                min-height: auto;
+                width: 100%;
+
+                img{
+                    width: 600px;
+                    border-radius: 4px;
+                    box-shadow: 2px 2px 20px black;
+                }
+            }
+        }
+    }
+}
+
+//TEXT BANNER
+.wrapper-text-banner{
+    max-width: 100vw;
+    width: 100%;
+    min-height: 300px;
+    display:flex;
+
+    .text-banner-container{
+        max-width: 1000px;
+        min-height: 200px;
+        width: 100%;
+        margin-left: auto;
+
+        .text{
+            @include title;
+            font-size: 50px;
+            color: color.$light-black;
+            letter-spacing: 2.8px;
+        }
+    }
+}
+
+//CONTENT
+.wrapper-content{
+    max-width: 100vw;
+    width: 100%;
+    min-height: 600px;
+
+    .content-container{
+        max-width: 1300px;
+        min-height: 00px;
+        width: 100%;
+        margin: auto;
+        @include container(space-between, center, row, wrap);
+        
+        .text-container{
+            max-width: 700px;
+            min-height: 300px;
+            width: 100%;
+            @include container(space-around, center, column);
+
+            .info{
+                @include info;
+            }
+        }
+
+        .img-content{
+            max-width: 500px;
+            min-height: 500px;
+            width: 100%;
+            
+            img{
+                width: 500px;
+                border-radius: 4px;
+                box-shadow: 2px 2px 20px black;
+            }
+        }
+    }
+}

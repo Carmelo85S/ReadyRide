@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../../style/normalize.css">
-    <link rel="stylesheet" href="../../style/style-services.css">
+    <link rel="stylesheet" href="../../style/style-services-pages.css">
     <title>Ride Ready - Rent a car</title>
 </head>
 <body>
@@ -29,16 +29,16 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a class="dropbtn">SERVICE</a>
+                    <a class="dropbtn" href="../services.html">SERVICE</a>
                     <ul class="dropdown-content-service active">
-                        <li><a class="dropbtn" href="./pages/cabriolet/cabriolet.html">MONTHLY SUB.</a></li>
-                        <li><a class="dropbtn" href="./pages/performance/performance.html">CHAUFFEUR</a></li>
-                        <li><a class="dropbtn" href="./pages/suv/suv.html">PRIVATE LOUNGE</a></li>
-                        <li><a class="dropbtn" href="./pages/sedan/sedan.html">LONG TERM </a></li>
-                        <li><a class="dropbtn" href="./pages/cabriolet/cabriolet.html">SHORT TERM </a></li>
-                        <li><a class="dropbtn" href="./pages/performance/performance.html">WEDDING CAR</a></li>
-                        <li><a class="dropbtn" href="./pages/suv/suv.html">DRIVING TOUR</a></li>
-                        <li><a class="dropbtn" href="./pages/sedan/sedan.html">DRIVE EXPERIENCE</a></li>
+                        <li><a class="dropbtn" href="./monthly-sub.html">MONTHLY SUB.</a></li>
+                        <li><a class="dropbtn" href="#">CHAUFFEUR</a></li>
+                        <li><a class="dropbtn" href="./private-lounge.html">PRIVATE LOUNGE</a></li>
+                        <li><a class="dropbtn" href="./long-term-rental.html">LONG TERM </a></li>
+                        <li><a class="dropbtn" href="./short-term-rental.html">SHORT TERM </a></li>
+                        <li><a class="dropbtn" href="./wedding-car.html">WEDDING CAR</a></li>
+                        <li><a class="dropbtn" href="./driving-tour.html">DRIVING TOUR</a></li>
+                        <li><a class="dropbtn" href="./drive-experience.html">DRIVE EXPERIENCE</a></li>
                     </ul>
                 </li>
                 <li><a href="#">CONTACT</a></li>
@@ -48,6 +48,107 @@
             </a>
         </nav>
     </header>
+
+    <!--HERO-->
+    <section class="wrapper-chauffeur">
+        <section class="chauffeur-container">
+            <section class="chauffeur-container-heading">
+                <h1 class="title">CHAUFFEUR</h1>
+            </section>
+        </section>
+    </section>
+
+    <!--INFO-->
+    <section class="wrapper-info">
+        <section class="info-container">
+            <section class="info-text-container-left">
+                <h2 class="head">
+                    First Class Chauffeur Services
+                </h2>
+                <p class="info">
+                    Experience the ultimate in luxury and convenience with our professional chauffeur service.
+                     Our experienced drivers ensure a seamless, comfortable journey, allowing you to relax and
+                      enjoy every moment, whether it's for business, special occasions, or city tours. With a fleet
+                       of premium vehicles, we guarantee style, safety, and personalized service tailored to your needs.
+                </p>
+                <a href="#" class="cta">Contact us</a>
+            </section>
+            <section class="img-info-container-right">
+                <section class="img-info">
+                    <img src="../../image-services/service/info-chauffeur.jpg" alt="chaffeur opening car door to a woman">
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!--TEXT BANNER-->
+    <section class="wrapper-text-banner">
+        <section class="text-banner-container">
+            <h2 class="text">
+                WHAT MAKES Ride<i>Ready</i> UNIQUE IS OUR DEDICATION TO
+                 DELIVERING A SMOOTH CHAFFEAUR EXPERIENCE EVERY TIME.
+            </h2>
+        </section>
+    </section>
+
+    <!--CONTENT-->
+    <section class="wrapper-content">
+        <section class="content-container">
+            <section class="text-container">
+                <p class="info">
+                    Discover a new standard of travel with our chauffeur service, 
+                    where luxury meets exceptional care. Our dedicated chauffeurs 
+                    are highly trained, punctual, and attentive, ensuring that your 
+                    experience is as smooth and comfortable as possible.
+                </p>
+                <p class="info">
+                    From important meetings to memorable occasions, our chauffeur 
+                    service provides a refined, stress-free travel experience. 
+                    Our fleet of high-end vehicles offers both elegance and comfort, 
+                    while our chauffeurs handle every detail, allowing you to sit back,
+                    relax, and arrive with confidence and style.
+                </p>
+            </section>
+            <section class="img-content">
+                <img src="../../image-services/service/cont-chauffeur.jpg" alt="chauffeur driving with a woman sitting in the back seat">
+            </section>
+        </section>
+    </section>
+    
+    <!--CONTACT FORM-->
+    <section class="form-wrapper">
+        <section class="form-heading">
+            <h2 class="heading">GET IN TOUCH</h2>
+        </section>
+        <section class="form-container">
+            <section class="form">
+                <form action="">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Insert your name" required>
+    
+                    <label for="object">Object: </label>
+                    <input type="text" name="object" id="object" placeholder="Insert the subject" required>
+    
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Insert your email" required>
+                    
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Insert your message" required></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130376.9791954411!2d17.729360986718753!3d59.297213999999975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77a53a7ee0cd%3A0xd8966a3e76636f78!2sExclusive%20Cars%20Stockholm%20AB!5e0!3m2!1ssv!2sse!4v1729766065887!5m2!1ssv!2sse" 
+                frameborder="0" 
+                style="border:0" 
+                allowfullscreen loading="lazy">
+            </iframe>
+            </section>
+        </section>
+    </section>
+
+
      <!--FOOTER-->
      <footer class="footer-wrapper">
         <section class="footer-content-container">
