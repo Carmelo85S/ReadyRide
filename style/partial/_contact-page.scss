@@ -1,0 +1,105 @@
+@use '../variable/font';
+@use '../variable/color';
+@import '../partial/navbar';
+@import '../partial/contact-form';
+@import '../partial/footer';
+@import '../mixin/mixins';
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding-top:30px;
+}
+
+//HERO
+.wrapper-category{
+    max-width: 100vw;
+    width: 100%;
+    min-height: 50vh;
+    background-image: url(../../image-contact/hero-contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+
+    .contact-container{
+        max-width: 1300px;
+        width: 100%;
+        min-height: 50vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        &-heading{
+            max-width: 500px;
+            min-height: 30px;
+            width: 100%;
+            margin-left: 100px;
+
+            .title{
+                max-width: 400px;
+                width: 100%;
+                min-height: 30px;
+                font-family: font.$font-family;
+                font-weight: 200;
+                font-size: 90px;
+                letter-spacing: 10px;
+                color: color.$golden;
+                line-height: 100px;
+            }
+        }
+    }
+}
+
+//CONTACT INFO
+.info-wrapper{
+    max-width: 100vw;
+    width: 100%;
+    min-height: 30vh;
+
+    .info-container{
+        max-width: 1300px;
+        min-height: 30vh;
+        width: 100%;
+        margin: auto;
+        @include container(center, center, row, wrap);
+
+        .info-card{
+            max-width:300px;
+            min-height: 150px;
+            width: 100%;
+            @include container(flex-start, center, column);
+
+
+            .title{
+                @include h2;
+                font-size: 16px;
+            }
+
+            .info-contact{
+                @include info;
+                font-size: 10px;
+            }
+
+            .contact-mail{
+                @include info;
+                font-size: 10px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../style/normalize.css">
-    <link rel="stylesheet" href="../style/style-vehicles.css">
+    <link rel="stylesheet" href="../style/style-contact-page.css">
     <title>Ride Ready - Rent a car</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT US</a></li>
                 <li class="dropdown">
-                    <a class="dropbtn active" href="./pages/vehicles.html">VEHICLE</a>
+                    <a class="dropbtn">VEHICLE</a>
                     <ul class="dropdown-content">
                         <li><a class="dropbtn" href="./cabriolet/cabriolet.html">CABRIOLET</a></li>
                         <li><a class="dropbtn" href="./performance/performance.html">PERFORMANCE</a></li>
@@ -30,7 +30,7 @@
                 </li>
                 <li class="dropdown">
                     <a class="dropbtn" href="./services.html">SERVICE</a>
-                    <ul class="dropdown-content-service">
+                    <ul class="dropdown-content-service active">
                         <li><a class="dropbtn" href="./services/monthly-sub.html">MONTHLY SUB.</a></li>
                         <li><a class="dropbtn" href="./services/chauffeur.html">CHAUFFEUR</a></li>
                         <li><a class="dropbtn" href="./services/private-lounge.html">PRIVATE LOUNGE</a></li>
@@ -41,7 +41,7 @@
                         <li><a class="dropbtn" href="./services/drive-experience.html">DRIVE EXPERIENCE</a></li>
                     </ul>
                 </li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a class="active" href="#">CONTACT</a></li>
             </ul>
             <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
                 <i class="fa fa-bars"></i>
@@ -50,96 +50,86 @@
     </header>
 
     <!--HERO-->
-    <section class="wrapper-vehicles">
-        <section class="vehicles-container">
-            <section class="vehicles-container-heading">
-                <h1 class="title">CHOOSE YOUR STYLE</h1>
+    <section class="wrapper-category">
+        <section class="contact-container">
+            <section class="contact-container-heading">
+                <h1 class="title">CONTACT</h1>
             </section>
-            <section class="card-container">
-                <section class="image-container slide-cabriolet">
-                    <a href="./cabriolet/cabriolet.html">
-                        <img src="../image-vehicles/cabriolet.jpg" alt="Cabriolet car">
-                    </a>
-                    <h2 class="category">Cabriolet</h2>
-                    <a class="cta" href="./cabriolet/cabriolet.html">Show more</a>
-                </section>
-                <section class="image-container slide-performance">
-                    <a href="./performance/performance.html">
-                        <img src="../image-vehicles/sport.jpg" alt="Sport car">
-                    </a>
-                    <h2 class="category">Performance</h2>
-                    <a class="cta" href="./performance/performance.html">Show more</a>
-                </section>
-                <section class="image-container slide-sedan">
-                    <a href="./sedan/sedan.html">
-                        <img src="../image-vehicles/sedan.jpg" alt="Sedan car">
-                    </a>
-                    <h2 class="category">Sedan</h2>
-                    <a class="cta" href="./sedan/sedan.html">Show more</a>
-                </section>
-                <section class="image-container slide-suv">
-                    <a href="./suv/suv.html">
-                        <img src="../image-vehicles/suv.jpg" alt="Suv car">
-                    </a>
-                    <h2 class="category">SUV</h2>
-                    <a class="cta" href="./suv/suv.html">Show more</a>
-                </section>
-            </section>
-            
         </section>
     </section>
 
-     <!--BRANDS-->
-     <section class="brands-wrapper">
-        <section class="brands-heading-container">
-            <h2 class="heading">CHOOSE BY BRAND</h2>
-        </section>
-        <section class="brands__container-vehicles-logos">
-            <a href="#">
-                <svg>
-                    <use href="../image-vehicles/svg/bentley.svg#bentley"></use>
-                </svg>
-            </a>
-            <a href="#">
-                <svg>
-                    <use href="../image-vehicles/svg/lamborghini.svg#lamborghini"></use>
-                </svg>
-            </a>
-            <a href="#">
-                <svg>
-                    <use href="../image-vehicles/svg/bugatti.svg#bugatti"></use>
-                </svg>
-            </a>
-            <a href="#">
-                <svg>
-                    <use href="../image-vehicles/svg/ferrari.svg#ferrari"></use>
-                </svg>
-            </a>
-            <a href="#">
-                <svg>
-                    <use href="../image-vehicles/svg/ford.svg#ford"></use>    
-                </svg>
-            </a>
-            <a href="#">
-                <svg>
-                    <use href="../image-vehicles/svg/audi.svg#audi"></use>    
-                </svg>
-            </a>
-            <a href="#">
-                <svg>
-                    <use href="../image-vehicles/svg/mclaren.svg#mclaren"></use>
-                </svg>
-            </a>
-            <a href="#">
-                <svg>
-                    <use href="../image-vehicles/svg/mercedes.svg#mercedes"></use>
-                </svg>
-            </a>
+    <!--CONTACT INFO-->
+    <section class="info-wrapper">
+        <section class="info-container">
+            <section class="info-card">
+                <h2 class="title">
+                    COMPANY INFO
+                </h2>
+                <p class="info-contact">
+                    READY RIDE AB
+                </p>
+                <p class="info-contact">
+                    ADDRESS: ingengata 21
+                </p>
+                <p class="info-contact">
+                    Company Code: SE-0123456789
+                </p>
+            </section>
+                <section class="info-card">
+                    <h2 class="title">
+                        DELIVERY AREAS
+                    </h2>
+                    <p class="info-contact">
+                        Sweden, Norway, Denmark, Germany
+                    </p>
+                </section>
+                <section class="info-card">
+                    <h2 class="title">
+                        CONTACTS
+                    </h2>
+                    <p class="info-contact">
+                        Tel: +46 12 345 67 89
+                    </p>
+                    <a class="contact-mail" href= "mailto: name@email.com"> rideready@example.com </a>
+                </section>
         </section>
     </section>
+
+    <!--CONTACT FORM-->
+    <section class="form-wrapper">
+        <section class="form-heading">
+            <h2 class="heading">GET IN TOUCH</h2>
+        </section>
+        <section class="form-container">
+            <section class="form">
+                <form action="">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Insert your name" required>
     
-    <!--FOOTER-->
-    <footer class="footer-wrapper">
+                    <label for="object">Object: </label>
+                    <input type="text" name="object" id="object" placeholder="Insert the subject" required>
+    
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Insert your email" required>
+                    
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Insert your message" required></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130376.9791954411!2d17.729360986718753!3d59.297213999999975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77a53a7ee0cd%3A0xd8966a3e76636f78!2sExclusive%20Cars%20Stockholm%20AB!5e0!3m2!1ssv!2sse!4v1729766065887!5m2!1ssv!2sse" 
+                frameborder="0" 
+                style="border:0" 
+                allowfullscreen loading="lazy">
+            </iframe>
+            </section>
+        </section>
+    </section>
+
+     <!--FOOTER-->
+     <footer class="footer-wrapper">
         <section class="footer-content-container">
             <section class="content">
                 <img src="../image-index/footer/text.png" alt="text outline ready ride">
@@ -156,16 +146,15 @@
                 </section>
                 <section class="content-container">
                     <ul class="link-list-style">
-                        <li class="link-list"><a class="link" href="../index.html">Home</a></li>
-                        <li class="link-list"><a class="link" href="#">Contact us</a></li>
-                        <li class="link-list"><a class="link" href="#">Our Services</a></li>
-                        <li class="link-list"><a class="link" href="#">Blog</a></li>
-                        <li class="link-list"><a class="link" href="#">Reviews</a></li>
+                        <li class="link-list"><a class="link" href="./index.html">Home</a></li>
+                        <li class="link-list"><a class="link" href="./about.html">About</a></li>
+                        <li class="link-list"><a class="link" href="./contact.html">Contact us</a></li>
+                        <li class="link-list"><a class="link" href="./services.html">Our Services</a></li>
+                        <li class="link-list"><a class="link" href="./vehicles.html">Our Fleet</a></li>
                     </ul>
                 </section>
                 <section class="content-container">
                     <ul class="link-list-style">
-                        <li class="link-list"><a class="link" href="#">Our Fleet</a></li>
                         <li class="link-list"><a class="link" href="#">Special Offers</a></li>
                         <li class="link-list"><a class="link" href="#">Book Now</a></li>
                         <li class="link-list"><a class="link" href="#">Locations</a></li>

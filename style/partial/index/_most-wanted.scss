@@ -8,7 +8,7 @@
 
   .most-wanted-container {
     max-width: 100vw;
-    min-height: 600px;
+    min-height: 350px;
     width: 100%;
     margin: 0 20px;
 
@@ -86,7 +86,7 @@
         text-align: center;
       }
 
-      button {
+      .rent-now-button {
         @include cta-car-slider;
         font-family: font.$font-family-manrope;
       }
